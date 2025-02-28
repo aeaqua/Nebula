@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- saved from url=(0041)https://earlier-photos-681356.framer.app/ -->
 <html lang="en">
@@ -7,7 +8,6 @@
     <script type="importmap" data-framer-importmap="">
       {
         "imports": {
-          "__framer-badge": "https://framerusercontent.com/modules/kr6mBIQPAjMiv35rQa3A/pERRjHDPh9IxXAn0rVsJ/PX9hIOIVM.js",
           "@emotion/hash": "https://ga.jspm.io/npm:@emotion/hash@0.8.0/dist/hash.browser.esm.js",
           "@motionone/dom": "https://ga.jspm.io/npm:@motionone/dom@10.12.0/dist/index.es.js",
           "@motionone/easing": "https://ga.jspm.io/npm:@motionone/easing@10.13.1/dist/index.es.js",
@@ -1735,7 +1735,6 @@ t-face {
 
         React.startTransition(() => {
           ReactDOM.createRoot(
-            document.getElementById("__framer-badge-container")
           ).render(
             React.createElement(
               React.Suspense,
@@ -1743,7 +1742,6 @@ t-face {
               React.createElement(
                 Framer.withStyleAppearEffect(Framer.Container),
                 {
-                  className: "__framer-badge",
                   __framer__threshold: 0.5,
                   __framer__animateOnce: true,
                   __framer__opacity: 0,
@@ -1765,7 +1763,6 @@ t-face {
                   __framer__rotateY: 0,
                   __framer__perspective: 1200,
                 },
-                React.createElement(React.lazy(() => import("__framer-badge")))
               )
             )
           );
