@@ -1,1790 +1,350 @@
 
 <!DOCTYPE html>
 <!-- saved from url=(0041)https://earlier-photos-681356.framer.app/ -->
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <script type="importmap" data-framer-importmap="">
-      {
-        "imports": {
-          "@emotion/hash": "https://ga.jspm.io/npm:@emotion/hash@0.8.0/dist/hash.browser.esm.js",
-          "@motionone/dom": "https://ga.jspm.io/npm:@motionone/dom@10.12.0/dist/index.es.js",
-          "@motionone/easing": "https://ga.jspm.io/npm:@motionone/easing@10.13.1/dist/index.es.js",
-          "@motionone/utils": "https://ga.jspm.io/npm:@motionone/utils@10.12.0/dist/index.es.js",
-          "@react-three/drei": "https://ga.jspm.io/npm:@react-three/drei@8.3.1/index.js",
-          "@react-three/fiber": "https://ga.jspm.io/npm:@react-three/fiber@7.0.24/dist/react-three-fiber.esm.js",
-          "airtable": "https://ga.jspm.io/npm:airtable@0.11.1/lib/airtable.js",
-          "canvas-confetti": "https://ga.jspm.io/npm:canvas-confetti@1.4.0/src/confetti.js",
-          "color-diff": "https://ga.jspm.io/npm:color-diff@1.2.0/lib/index.js",
-          "color-hash": "https://ga.jspm.io/npm:color-hash@2.0.1/dist/color-hash.js",
-          "framer-motion-3d": "https://ga.jspm.io/npm:framer-motion-3d@6.0.0-beta.8/dist/es/index.mjs",
-          "framesync": "https://ga.jspm.io/npm:framesync@6.1.2/dist/es/index.mjs",
-          "motion": "https://ga.jspm.io/npm:motion@10.12.0/dist/main.es.js",
-          "popmotion": "https://ga.jspm.io/npm:popmotion@11.0.3/dist/es/index.mjs",
-          "react-confetti": "https://ga.jspm.io/npm:react-confetti@6.0.1/dist/react-confetti.min.js",
-          "shopify-buy": "https://ga.jspm.io/npm:shopify-buy@2.14.0/index.js",
-          "style-value-types": "https://ga.jspm.io/npm:style-value-types@5.1.0/dist/es/index.mjs",
-          "three": "https://ga.jspm.io/npm:three@0.136.0/build/three.module.js",
-          "tinycolor2": "https://ga.jspm.io/npm:tinycolor2@1.4.2/tinycolor.js",
-          "valtio": "https://ga.jspm.io/npm:valtio@1.2.9/esm/index.js",
-          "zustand": "https://ga.jspm.io/npm:zustand@3.7.1/esm/index.js",
-          "zustand/middleware": "https://ga.jspm.io/npm:zustand@3.7.1/esm/middleware.js",
-          "#framer/local/canvasComponent/An_WrdDP7/An_WrdDP7.js": "https://framerusercontent.com/modules/dJeETko05of6iQetKzxj/Th6WE8LGKagHHXtAAex0/An_WrdDP7.js",
-          "#framer/local/canvasComponent/aXFrEj1e9/aXFrEj1e9.js": "https://framerusercontent.com/modules/8h8Zw7iUnDughGZwNCP5/z1vxOurSc2yIdPIOOMju/aXFrEj1e9.js",
-          "#framer/local/canvasComponent/BFXWR6J47/BFXWR6J47.js": "https://framerusercontent.com/modules/wnX0ulMHiReBuh9puWt9/J2xyoq6HQ4eOAGOCiCqH/BFXWR6J47.js",
-          "#framer/local/canvasComponent/drNwxem2Y/drNwxem2Y.js": "https://framerusercontent.com/modules/sjxmyafL8i0icj4bVwxZ/iW1CwvvSiuEdq8OHjgCx/drNwxem2Y.js",
-          "#framer/local/canvasComponent/eJhklGgsC/eJhklGgsC.js": "https://framerusercontent.com/modules/3kqHTm1U1UMmXyKT8wmm/zJMwoIZ7RLv9GdWGBTpu/eJhklGgsC.js",
-          "#framer/local/canvasComponent/EW7y2ZIXg/EW7y2ZIXg.js": "https://framerusercontent.com/modules/jmimWWjxHEOlxFhrgDRN/KYQmzBgj5ixzVp2B2iwv/EW7y2ZIXg.js",
-          "#framer/local/canvasComponent/FDV_8c3TC/FDV_8c3TC.js": "https://framerusercontent.com/modules/6nihYWywof4mVbFtm5CV/9ps146JV6it4F1RAoyZw/FDV_8c3TC.js",
-          "#framer/local/canvasComponent/Fmiqlgvwt/Fmiqlgvwt.js": "https://framerusercontent.com/modules/7OhXD3o621ANlmzQ2l6Y/WQDegDz5QiIoNOBztjFJ/Fmiqlgvwt.js",
-          "#framer/local/canvasComponent/fWKQ8O04W/fWKQ8O04W.js": "https://framerusercontent.com/modules/gjlpXOAtxqx39UOSvDVI/upX10ByQgE03mIUdPlHX/fWKQ8O04W.js",
-          "#framer/local/canvasComponent/GbghE6qHA/GbghE6qHA.js": "https://framerusercontent.com/modules/2L7S796V4uKsJhNkHp4e/wrFcRsB07VdHL9ICqc1p/GbghE6qHA.js",
-          "#framer/local/canvasComponent/Jr5N2Bnlz/Jr5N2Bnlz.js": "https://framerusercontent.com/modules/22zKKLNlS4gDmPOD0YoG/YOWsZ42dqjszO3enIfMT/Jr5N2Bnlz.js",
-          "#framer/local/canvasComponent/ljk_nUJmB/ljk_nUJmB.js": "https://framerusercontent.com/modules/wNMwJNEisZygdSNUCmmk/nm9sFOGLi6gbrTWyJTko/ljk_nUJmB.js",
-          "#framer/local/canvasComponent/MFIbAF8Px/MFIbAF8Px.js": "https://framerusercontent.com/modules/5FpVFrXWyG6vE2Itnm7S/sKj8Jt3acMA79LLYxN4R/MFIbAF8Px.js",
-          "#framer/local/canvasComponent/nlmTUx67C/nlmTUx67C.js": "https://framerusercontent.com/modules/hyawxCz8j2TOje7bJ3Hx/KVvVhw7DO4NRtVlBGkxQ/nlmTUx67C.js",
-          "#framer/local/canvasComponent/nOc71lskF/nOc71lskF.js": "https://framerusercontent.com/modules/zAdX92VepvotvbkZWSqZ/jm5bKPeTw1RA6H1EWxPI/nOc71lskF.js",
-          "#framer/local/canvasComponent/OwUUArcJc/OwUUArcJc.js": "https://framerusercontent.com/modules/xMj82kNxHQ7PpMP0BglF/mtGUSsRxogg2mXJ7nfcD/OwUUArcJc.js",
-          "#framer/local/canvasComponent/pagzBkVvh/pagzBkVvh.js": "https://framerusercontent.com/modules/cSDWnGTTLAW1OATP763w/1Nlk8tRZeov4pd3Zj6Js/pagzBkVvh.js",
-          "#framer/local/canvasComponent/pEWisU6S_/pEWisU6S_.js": "https://framerusercontent.com/modules/ol7CrzbktO0lohKIDB30/jVIii1RLoSvb6HRdnGqV/pEWisU6S_.js",
-          "#framer/local/canvasComponent/rlAeb7TOv/rlAeb7TOv.js": "https://framerusercontent.com/modules/llGdlJmEqydjX259HL9y/jVdEXfXaoBSviRaMRXcq/rlAeb7TOv.js",
-          "#framer/local/canvasComponent/RUtF2RpNT/RUtF2RpNT.js": "https://framerusercontent.com/modules/9D5wQnpDZEjuzkEQauIo/52TAfr5GMOcfiHuukKho/RUtF2RpNT.js",
-          "#framer/local/canvasComponent/TCJc2BZPH/TCJc2BZPH.js": "https://framerusercontent.com/modules/jvOPAcJKwQASyLkQ3fYG/bT5f2hB3TvWLa6kxOBGx/TCJc2BZPH.js",
-          "#framer/local/canvasComponent/uee_c53SQ/uee_c53SQ.js": "https://framerusercontent.com/modules/oBKaxhf0Uc3JQliGRFep/cEB4w7jvkP5nFdf3TuYi/uee_c53SQ.js",
-          "#framer/local/canvasComponent/UmGNFKKXS/UmGNFKKXS.js": "https://framerusercontent.com/modules/9g6Pbi7BhlKPeh1fs1ZA/dCO14ONdj76IvrNBLHkI/UmGNFKKXS.js",
-          "#framer/local/canvasComponent/ViGyQRP0q/ViGyQRP0q.js": "https://framerusercontent.com/modules/4Q3saCZM0Moop1tYBuB8/F6ggxym8IOlfxUnC8DhQ/ViGyQRP0q.js",
-          "#framer/local/canvasComponent/viZNq0rAf/viZNq0rAf.js": "https://framerusercontent.com/modules/12iGEKnwniyEbXgxAUG5/9fkjoj54ClCVAQp9Sp5q/viZNq0rAf.js",
-          "#framer/local/canvasComponent/vKpm2ciLh/vKpm2ciLh.js": "https://framerusercontent.com/modules/oYexlxbWTuhcQQCOHmYj/ipTgEBiiskwHZKH5Ul4A/vKpm2ciLh.js",
-          "#framer/local/canvasComponent/vwd9GHTJP/vwd9GHTJP.js": "https://framerusercontent.com/modules/uTu5hArCw32fZZ2NlwYP/MxctQu3sH96biVWmjKKX/vwd9GHTJP.js",
-          "#framer/local/canvasComponent/w20F4fU7i/w20F4fU7i.js": "https://framerusercontent.com/modules/9WRWZxhtEc0aEuV9jkRF/GAIz7YOghTrplDND8qYB/w20F4fU7i.js",
-          "#framer/local/canvasComponent/Wfz6sbrn0/Wfz6sbrn0.js": "https://framerusercontent.com/modules/Aopj86t55WAO8sqJCGsU/JCU0J14bku1PusLrpPw8/Wfz6sbrn0.js",
-          "#framer/local/canvasComponent/wiLUxVe42/wiLUxVe42.js": "https://framerusercontent.com/modules/aqtC6PJO5tD6huVJuqLe/4K7lHDx0sCxs4PBa2mwN/wiLUxVe42.js",
-          "#framer/local/canvasComponent/wXlJ3V0RH/wXlJ3V0RH.js": "https://framerusercontent.com/modules/qqBZWhTbu3r1BtYPeG5k/vRw4zw2b6oKqG28nQWYu/wXlJ3V0RH.js",
-          "#framer/local/canvasComponent/Wyff7RHgu/Wyff7RHgu.js": "https://framerusercontent.com/modules/qpI9oV8lN0xeCrQfLlWz/NLdcFXfRhp6P5EevHfvB/Wyff7RHgu.js",
-          "#framer/local/canvasComponent/wZ3ugB2An/wZ3ugB2An.js": "https://framerusercontent.com/modules/iQIbs1qb5sPtubBXSggB/GZDoh1U9HzD24jNS5flA/wZ3ugB2An.js",
-          "#framer/local/canvasComponent/ygW146Z3v/ygW146Z3v.js": "https://framerusercontent.com/modules/8fzdhTU35TTCR2DUXbSL/VVHqFK45ybTb9sJj4uLj/ygW146Z3v.js",
-          "#framer/local/canvasComponent/zQieywu9N/zQieywu9N.js": "https://framerusercontent.com/modules/pXIla6WCXDRJbk6sb1jr/1ZQd14iGJW9hjEroX1VE/zQieywu9N.js",
-          "#framer/local/collection/NBM_IbLPh/NBM_IbLPh.js": "https://framerusercontent.com/modules/yTTqhHfsqX46gZKJfVCm/yHfnMtlDf8AEsfogkTG1/NBM_IbLPh.js",
-          "#framer/local/collection/o20WuO9kM/o20WuO9kM.js": "https://framerusercontent.com/modules/9yDZkGEqYhuRh4Z0oayc/gfFWRaXh4L7gL5RuxDXM/o20WuO9kM.js",
-          "#framer/local/componentPresets/componentPresets/componentPresets.js": "https://framerusercontent.com/modules/tKrljwGmiUGZC9Fe5jmL/sRzMGgIj3nBKQT7W1eDl/componentPresets.js",
-          "#framer/local/css/CHX4TW73y/CHX4TW73y.js": "https://framerusercontent.com/modules/a7yJdl5ye1GYpbJ5jdhj/lKkznI1DI4nVWVWFGh7I/CHX4TW73y.js",
-          "#framer/local/css/GcYxE5ig6/GcYxE5ig6.js": "https://framerusercontent.com/modules/v5zqy6Vx9oiBcVlNYumW/x7MoslBKGNMQDQD9gEU3/GcYxE5ig6.js",
-          "#framer/local/css/GUmqEicwe/GUmqEicwe.js": "https://framerusercontent.com/modules/ty2wqCEFmrhChFvcL28L/NQP3Op1Xdk4pNifZbHtw/GUmqEicwe.js",
-          "#framer/local/css/Im8yuoTZa/Im8yuoTZa.js": "https://framerusercontent.com/modules/fmEZjl0XyoKSUiefC54K/ZgGKLKtAm21HS6N79EEc/Im8yuoTZa.js",
-          "#framer/local/css/KRqmZpwbm/KRqmZpwbm.js": "https://framerusercontent.com/modules/rTsa6DErF9OvG7HSxFH2/dJu5HBU4oivDP4wRx2Zl/KRqmZpwbm.js",
-          "#framer/local/css/NqE6zDPgU/NqE6zDPgU.js": "https://framerusercontent.com/modules/304IBIo8CsMNoRpmQzKd/8Zvnswkq3ggbN7NwEEsA/NqE6zDPgU.js",
-          "#framer/local/css/sj87_smCl/sj87_smCl.js": "https://framerusercontent.com/modules/5Ij7P3uAQCXL3mjNJLYV/67yJyOJa8i2w0mXTLn2Y/sj87_smCl.js",
-          "#framer/local/css/TdJ2zQB9G/TdJ2zQB9G.js": "https://framerusercontent.com/modules/4UynXJmwhknMwW0y0hDj/DVsNqKg36Y33BQLKLrvc/TdJ2zQB9G.js",
-          "#framer/local/css/uOGvvkAru/uOGvvkAru.js": "https://framerusercontent.com/modules/pWsuwoMN2xin8uRXxnDp/W2Sad1uzuicWipB1yhay/uOGvvkAru.js",
-          "#framer/local/css/v4PWmgpAs/v4PWmgpAs.js": "https://framerusercontent.com/modules/bnp4xFzLP0oskVX2zjE6/h94WZfMAw6eUzUz8NvsZ/v4PWmgpAs.js",
-          "#framer/local/css/wHEZ6NkMH/wHEZ6NkMH.js": "https://framerusercontent.com/modules/kO3PVyNrJG71bQ3bNlpC/91khngQiRa3l9kPhEyqk/wHEZ6NkMH.js",
-          "#framer/local/css/Y1UR2y0W_/Y1UR2y0W_.js": "https://framerusercontent.com/modules/os9yFokt0KYs2WVPSx30/YkbhchhHg6k3BWljE2ho/Y1UR2y0W_.js",
-          "#framer/local/screen/augiA20Il/augiA20Il.js": "https://framerusercontent.com/modules/uvdpWCepP8fAcMhB8bmT/4PwDNrmIofhwgmbjBHvu/augiA20Il.js",
-          "#framer/local/screen/bv_Sdt4qg/bv_Sdt4qg.js": "https://framerusercontent.com/modules/ypFYLdGFiIoaxH49lYln/NmWOas3yvCvH22zSElON/bv_Sdt4qg.js",
-          "#framer/local/screen/cX2Ymwn5I/cX2Ymwn5I.js": "https://framerusercontent.com/modules/79sA0gAau0N6EAkKtzT8/fNPBvyO77jzOuzjmfbmk/cX2Ymwn5I.js",
-          "#framer/local/screen/meNNVlbTJ/meNNVlbTJ.js": "https://framerusercontent.com/modules/xTn7uv4aI4Yc6MyxrxSW/GoBCWjwhvLL9VkUE5u5B/meNNVlbTJ.js",
-          "#framer/local/siteMetadata/siteMetadata/siteMetadata.js": "https://framerusercontent.com/modules/vGCvLMJgCs098gTlCGC2/6e9yAM0sLSHxkfPV8cj2/siteMetadata.js",
-          "#framer/local/webPageMetadata/meNNVlbTJ/meNNVlbTJ.js": "https://framerusercontent.com/modules/fumK9TwVtxiKMukhcdse/UE3K6vIEv4M9ZZ85fsgo/meNNVlbTJ.js",
-          "#framer/local/webPageMetadata/cX2Ymwn5I/cX2Ymwn5I.js": "https://framerusercontent.com/modules/j261HnuKyvKPoDrHjk8B/NDJEZbiB8m34FeM6NCTG/cX2Ymwn5I.js",
-          "#framer/local/webPageMetadata/bv_Sdt4qg/bv_Sdt4qg.js": "https://framerusercontent.com/modules/eAzZxkT7zf1zxdwEKSiN/NqBwIW2rrkBpzacT7hh3/bv_Sdt4qg.js",
-          "#framer/local/webPageMetadata/augiA20Il/augiA20Il.js": "https://framerusercontent.com/modules/pnvHNjfoucBHHIOgIHDc/DTvJzN3fApLOztIo6z1v/augiA20Il.js",
-          "#framer/local/codeFile/FGxZluj/Examples.js": "https://framerusercontent.com/modules/moYcX4JwRhJQUJ0FwDV4/XTdQjQ7D3xXLlhHkHlYE/Examples.js",
-          "framer": "https://app.framerstatic.com/framer.FGVXATZ3.mjs",
-          "framer-motion": "https://app.framerstatic.com/framer-motion.KB2VX5JL.mjs",
-          "react": "https://ga.jspm.io/npm:react@18.2.0/index.js",
-          "react-dom": "https://ga.jspm.io/npm:react-dom@18.2.0/index.js",
-          "react-dom/client": "https://ga.jspm.io/npm:react-dom@18.2.0/client.js",
-          "react-dom/server": "https://ga.jspm.io/npm:react-dom@18.2.0/server.browser.js",
-          "react/jsx-runtime": "https://ga.jspm.io/npm:react@18.2.0/jsx-runtime.js"
-        },
-        "scopes": {
-          "https://ga.jspm.io/": {
-            "@babel/runtime/helpers/esm/defineProperty": "https://ga.jspm.io/npm:@babel/runtime@7.16.7/helpers/esm/defineProperty.js",
-            "@babel/runtime/helpers/esm/extends": "https://ga.jspm.io/npm:@babel/runtime@7.16.7/helpers/esm/extends.js",
-            "@chevrotain/utils": "https://ga.jspm.io/npm:@chevrotain/utils@9.1.0/lib/src/api.js",
-            "@motionone/animation": "https://ga.jspm.io/npm:@motionone/animation@10.12.0/dist/index.es.js",
-            "@motionone/easing": "https://ga.jspm.io/npm:@motionone/easing@10.12.0/dist/index.es.js",
-            "@motionone/generators": "https://ga.jspm.io/npm:@motionone/generators@10.12.0/dist/index.es.js",
-            "@motionone/types": "https://ga.jspm.io/npm:@motionone/types@10.12.0/dist/index.es.js",
-            "@react-spring/animated": "https://ga.jspm.io/npm:@react-spring/animated@9.4.1/dist/react-spring-animated.esm.js",
-            "@react-spring/core": "https://ga.jspm.io/npm:@react-spring/core@9.4.1/dist/react-spring-core.esm.js",
-            "@react-spring/rafz": "https://ga.jspm.io/npm:@react-spring/rafz@9.4.1/dist/react-spring-rafz.esm.js",
-            "@react-spring/shared": "https://ga.jspm.io/npm:@react-spring/shared@9.4.1/dist/react-spring-shared.esm.js",
-            "@react-spring/three": "https://ga.jspm.io/npm:@react-spring/three@9.4.1/dist/react-spring-three.esm.js",
-            "@react-spring/types/animated": "https://ga.jspm.io/npm:@react-spring/types@9.4.1/animated.js",
-            "@react-spring/types/interpolation": "https://ga.jspm.io/npm:@react-spring/types@9.4.1/interpolation.js",
-            "@use-gesture/core": "https://ga.jspm.io/npm:@use-gesture/core@10.2.4/dist/use-gesture-core.esm.js",
-            "@use-gesture/core/actions": "https://ga.jspm.io/npm:@use-gesture/core@10.2.4/actions/dist/use-gesture-core-actions.esm.js",
-            "@use-gesture/core/types": "https://ga.jspm.io/npm:@use-gesture/core@10.2.4/types/dist/use-gesture-core-types.esm.js",
-            "@use-gesture/core/utils": "https://ga.jspm.io/npm:@use-gesture/core@10.2.4/utils/dist/use-gesture-core-utils.esm.js",
-            "@use-gesture/react": "https://ga.jspm.io/npm:@use-gesture/react@10.2.4/dist/use-gesture-react.esm.js",
-            "abort-controller": "https://ga.jspm.io/npm:abort-controller@3.0.0/browser.js",
-            "abortcontroller-polyfill/dist/cjs-ponyfill": "https://ga.jspm.io/npm:abortcontroller-polyfill@1.7.3/dist/cjs-ponyfill.js",
-            "bidi-js": "https://ga.jspm.io/npm:bidi-js@1.0.2/dist/bidi.js",
-            "buffer": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.14/nodelibs/browser/buffer.js",
-            "chevrotain": "https://ga.jspm.io/npm:chevrotain@9.1.0/lib_esm/api_esm.mjs",
-            "debounce": "https://ga.jspm.io/npm:debounce@1.2.1/index.js",
-            "detect-gpu": "https://ga.jspm.io/npm:detect-gpu@3.1.30/dist/detect-gpu.esm.js",
-            "fast-deep-equal": "https://ga.jspm.io/npm:fast-deep-equal@3.1.3/index.js",
-            "fflate": "https://ga.jspm.io/npm:fflate@0.6.10/esm/browser.js",
-            "framesync": "https://ga.jspm.io/npm:framesync@6.0.1/dist/es/index.mjs",
-            "hey-listen": "https://ga.jspm.io/npm:hey-listen@1.0.8/dist/index.js",
-            "ktx-parse": "https://ga.jspm.io/npm:ktx-parse@0.2.2/dist/ktx-parse.modern.js",
-            "lodash.omit": "https://ga.jspm.io/npm:lodash.omit@4.5.0/index.js",
-            "lodash.pick": "https://ga.jspm.io/npm:lodash.pick@4.4.0/index.js",
-            "lodash/get": "https://ga.jspm.io/npm:lodash@4.17.21/get.js",
-            "lodash/isArray": "https://ga.jspm.io/npm:lodash@4.17.21/isArray.js",
-            "lodash/isFunction": "https://ga.jspm.io/npm:lodash@4.17.21/isFunction.js",
-            "lodash/isNil": "https://ga.jspm.io/npm:lodash@4.17.21/isNil.js",
-            "lodash/isNumber": "https://ga.jspm.io/npm:lodash@4.17.21/isNumber.js",
-            "lodash/isPlainObject": "https://ga.jspm.io/npm:lodash@4.17.21/isPlainObject.js",
-            "lodash/isString": "https://ga.jspm.io/npm:lodash@4.17.21/isString.js",
-            "lodash/keys": "https://ga.jspm.io/npm:lodash@4.17.21/keys.js",
-            "mmd-parser": "https://ga.jspm.io/npm:mmd-parser@1.0.4/build/mmdparser.js",
-            "node-fetch": "https://ga.jspm.io/npm:node-fetch@2.6.7/browser.js",
-            "object-assign": "https://ga.jspm.io/npm:object-assign@4.1.1/index.js",
-            "opentype.js": "https://ga.jspm.io/npm:opentype.js@1.3.4/dist/opentype.module.js",
-            "potpack": "https://ga.jspm.io/npm:potpack@1.0.2/index.mjs",
-            "process": "https://framer.com/m/framer/empty.js@0.1.0",
-            "prop-types": "https://ga.jspm.io/npm:prop-types@15.8.0/index.js",
-            "proxy-compare": "https://ga.jspm.io/npm:proxy-compare@2.0.2/dist/index.modern.js",
-            "react-composer": "https://ga.jspm.io/npm:react-composer@5.0.2/es/index.js",
-            "react-merge-refs": "https://ga.jspm.io/npm:react-merge-refs@1.1.0/dist/react-merge-refs.esm.js",
-            "react-reconciler": "https://ga.jspm.io/npm:react-reconciler@0.26.2/index.js",
-            "react-use-measure": "https://ga.jspm.io/npm:react-use-measure@2.1.1/dist/web.js",
-            "regexp-to-ast": "https://ga.jspm.io/npm:regexp-to-ast@0.5.0/lib/regexp-to-ast.js",
-            "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.0/index.js",
-            "style-value-types": "https://ga.jspm.io/npm:style-value-types@5.0.0/dist/es/index.mjs",
-            "three-mesh-bvh": "https://ga.jspm.io/npm:three-mesh-bvh@0.5.3/src/index.js",
-            "three-stdlib": "https://ga.jspm.io/npm:three-stdlib@2.6.4/index.js",
-            "three/examples/js/libs/stats.min": "https://ga.jspm.io/npm:three@0.136.0/examples/js/libs/stats.min.js",
-            "troika-three-text": "https://ga.jspm.io/npm:troika-three-text@0.44.0/dist/troika-three-text.esm.js",
-            "troika-three-utils": "https://ga.jspm.io/npm:troika-three-utils@0.44.0/dist/troika-three-utils.esm.js",
-            "troika-worker-utils": "https://ga.jspm.io/npm:troika-worker-utils@0.44.0/dist/troika-worker-utils.esm.js",
-            "tslib": "https://ga.jspm.io/npm:tslib@2.4.0/tslib.es6.js",
-            "use-asset": "https://ga.jspm.io/npm:use-asset@1.0.4/dist/index.cjs.js",
-            "valtio/vanilla": "https://ga.jspm.io/npm:valtio@1.2.9/esm/vanilla.js",
-            "zstddec": "https://ga.jspm.io/npm:zstddec@0.0.2/dist/zstddec.js",
-            "zustand": "https://ga.jspm.io/npm:zustand@3.6.8/esm/index.js",
-            "fs": "https://framer.com/m/framer/empty.js@0.1.0"
-          },
-          "https://esm.sh/": {
-            "fs": "https://framer.com/m/framer/empty.js@0.1.0",
-            "process": "https://framer.com/m/framer/empty.js@0.1.0",
-            "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.0/index.js"
-          },
-          "https://ga.jspm.io/npm:framer-motion-3d@6.0.0-beta.8/": {
-            "tslib": "https://ga.jspm.io/npm:tslib@2.3.1/tslib.es6.js"
-          }
-        }
-      }
-    </script>
-    <script
-      async=""
-      src="./Nebula Executor_files/es-module-shims.js.download"
-      crossorigin="anonymous"
-      data-framer-es-module-shims=""
-    ></script>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script type="importmap" data-framer-importmap="">{"imports":{"__framer-badge":"https://framerusercontent.com/modules/kr6mBIQPAjMiv35rQa3A/pERRjHDPh9IxXAn0rVsJ/PX9hIOIVM.js","@emotion/hash":"https://ga.jspm.io/npm:@emotion/hash@0.8.0/dist/hash.browser.esm.js","@motionone/dom":"https://ga.jspm.io/npm:@motionone/dom@10.12.0/dist/index.es.js","@motionone/easing":"https://ga.jspm.io/npm:@motionone/easing@10.13.1/dist/index.es.js","@motionone/utils":"https://ga.jspm.io/npm:@motionone/utils@10.12.0/dist/index.es.js","@react-three/drei":"https://ga.jspm.io/npm:@react-three/drei@8.3.1/index.js","@react-three/fiber":"https://ga.jspm.io/npm:@react-three/fiber@7.0.24/dist/react-three-fiber.esm.js","airtable":"https://ga.jspm.io/npm:airtable@0.11.1/lib/airtable.js","canvas-confetti":"https://ga.jspm.io/npm:canvas-confetti@1.4.0/src/confetti.js","color-diff":"https://ga.jspm.io/npm:color-diff@1.2.0/lib/index.js","color-hash":"https://ga.jspm.io/npm:color-hash@2.0.1/dist/color-hash.js","framer-motion-3d":"https://ga.jspm.io/npm:framer-motion-3d@6.0.0-beta.8/dist/es/index.mjs","framesync":"https://ga.jspm.io/npm:framesync@6.1.2/dist/es/index.mjs","motion":"https://ga.jspm.io/npm:motion@10.12.0/dist/main.es.js","popmotion":"https://ga.jspm.io/npm:popmotion@11.0.3/dist/es/index.mjs","react-confetti":"https://ga.jspm.io/npm:react-confetti@6.0.1/dist/react-confetti.min.js","shopify-buy":"https://ga.jspm.io/npm:shopify-buy@2.14.0/index.js","style-value-types":"https://ga.jspm.io/npm:style-value-types@5.1.0/dist/es/index.mjs","three":"https://ga.jspm.io/npm:three@0.136.0/build/three.module.js","tinycolor2":"https://ga.jspm.io/npm:tinycolor2@1.4.2/tinycolor.js","valtio":"https://ga.jspm.io/npm:valtio@1.2.9/esm/index.js","zustand":"https://ga.jspm.io/npm:zustand@3.7.1/esm/index.js","zustand/middleware":"https://ga.jspm.io/npm:zustand@3.7.1/esm/middleware.js","#framer/local/canvasComponent/An_WrdDP7/An_WrdDP7.js":"https://framerusercontent.com/modules/dJeETko05of6iQetKzxj/Th6WE8LGKagHHXtAAex0/An_WrdDP7.js","#framer/local/canvasComponent/aXFrEj1e9/aXFrEj1e9.js":"https://framerusercontent.com/modules/8h8Zw7iUnDughGZwNCP5/z1vxOurSc2yIdPIOOMju/aXFrEj1e9.js","#framer/local/canvasComponent/BFXWR6J47/BFXWR6J47.js":"https://framerusercontent.com/modules/wnX0ulMHiReBuh9puWt9/J2xyoq6HQ4eOAGOCiCqH/BFXWR6J47.js","#framer/local/canvasComponent/drNwxem2Y/drNwxem2Y.js":"https://framerusercontent.com/modules/sjxmyafL8i0icj4bVwxZ/iW1CwvvSiuEdq8OHjgCx/drNwxem2Y.js","#framer/local/canvasComponent/eJhklGgsC/eJhklGgsC.js":"https://framerusercontent.com/modules/3kqHTm1U1UMmXyKT8wmm/zJMwoIZ7RLv9GdWGBTpu/eJhklGgsC.js","#framer/local/canvasComponent/EW7y2ZIXg/EW7y2ZIXg.js":"https://framerusercontent.com/modules/jmimWWjxHEOlxFhrgDRN/KYQmzBgj5ixzVp2B2iwv/EW7y2ZIXg.js","#framer/local/canvasComponent/FDV_8c3TC/FDV_8c3TC.js":"https://framerusercontent.com/modules/6nihYWywof4mVbFtm5CV/9ps146JV6it4F1RAoyZw/FDV_8c3TC.js","#framer/local/canvasComponent/Fmiqlgvwt/Fmiqlgvwt.js":"https://framerusercontent.com/modules/7OhXD3o621ANlmzQ2l6Y/WQDegDz5QiIoNOBztjFJ/Fmiqlgvwt.js","#framer/local/canvasComponent/fWKQ8O04W/fWKQ8O04W.js":"https://framerusercontent.com/modules/gjlpXOAtxqx39UOSvDVI/upX10ByQgE03mIUdPlHX/fWKQ8O04W.js","#framer/local/canvasComponent/GbghE6qHA/GbghE6qHA.js":"https://framerusercontent.com/modules/2L7S796V4uKsJhNkHp4e/wrFcRsB07VdHL9ICqc1p/GbghE6qHA.js","#framer/local/canvasComponent/Jr5N2Bnlz/Jr5N2Bnlz.js":"https://framerusercontent.com/modules/22zKKLNlS4gDmPOD0YoG/YOWsZ42dqjszO3enIfMT/Jr5N2Bnlz.js","#framer/local/canvasComponent/ljk_nUJmB/ljk_nUJmB.js":"https://framerusercontent.com/modules/wNMwJNEisZygdSNUCmmk/nm9sFOGLi6gbrTWyJTko/ljk_nUJmB.js","#framer/local/canvasComponent/MFIbAF8Px/MFIbAF8Px.js":"https://framerusercontent.com/modules/5FpVFrXWyG6vE2Itnm7S/sKj8Jt3acMA79LLYxN4R/MFIbAF8Px.js","#framer/local/canvasComponent/nlmTUx67C/nlmTUx67C.js":"https://framerusercontent.com/modules/hyawxCz8j2TOje7bJ3Hx/KVvVhw7DO4NRtVlBGkxQ/nlmTUx67C.js","#framer/local/canvasComponent/nOc71lskF/nOc71lskF.js":"https://framerusercontent.com/modules/zAdX92VepvotvbkZWSqZ/jm5bKPeTw1RA6H1EWxPI/nOc71lskF.js","#framer/local/canvasComponent/OwUUArcJc/OwUUArcJc.js":"https://framerusercontent.com/modules/xMj82kNxHQ7PpMP0BglF/mtGUSsRxogg2mXJ7nfcD/OwUUArcJc.js","#framer/local/canvasComponent/pagzBkVvh/pagzBkVvh.js":"https://framerusercontent.com/modules/cSDWnGTTLAW1OATP763w/1Nlk8tRZeov4pd3Zj6Js/pagzBkVvh.js","#framer/local/canvasComponent/pEWisU6S_/pEWisU6S_.js":"https://framerusercontent.com/modules/ol7CrzbktO0lohKIDB30/jVIii1RLoSvb6HRdnGqV/pEWisU6S_.js","#framer/local/canvasComponent/rlAeb7TOv/rlAeb7TOv.js":"https://framerusercontent.com/modules/llGdlJmEqydjX259HL9y/jVdEXfXaoBSviRaMRXcq/rlAeb7TOv.js","#framer/local/canvasComponent/RUtF2RpNT/RUtF2RpNT.js":"https://framerusercontent.com/modules/9D5wQnpDZEjuzkEQauIo/52TAfr5GMOcfiHuukKho/RUtF2RpNT.js","#framer/local/canvasComponent/TCJc2BZPH/TCJc2BZPH.js":"https://framerusercontent.com/modules/jvOPAcJKwQASyLkQ3fYG/bT5f2hB3TvWLa6kxOBGx/TCJc2BZPH.js","#framer/local/canvasComponent/uee_c53SQ/uee_c53SQ.js":"https://framerusercontent.com/modules/oBKaxhf0Uc3JQliGRFep/cEB4w7jvkP5nFdf3TuYi/uee_c53SQ.js","#framer/local/canvasComponent/UmGNFKKXS/UmGNFKKXS.js":"https://framerusercontent.com/modules/9g6Pbi7BhlKPeh1fs1ZA/dCO14ONdj76IvrNBLHkI/UmGNFKKXS.js","#framer/local/canvasComponent/ViGyQRP0q/ViGyQRP0q.js":"https://framerusercontent.com/modules/4Q3saCZM0Moop1tYBuB8/F6ggxym8IOlfxUnC8DhQ/ViGyQRP0q.js","#framer/local/canvasComponent/viZNq0rAf/viZNq0rAf.js":"https://framerusercontent.com/modules/12iGEKnwniyEbXgxAUG5/9fkjoj54ClCVAQp9Sp5q/viZNq0rAf.js","#framer/local/canvasComponent/vKpm2ciLh/vKpm2ciLh.js":"https://framerusercontent.com/modules/oYexlxbWTuhcQQCOHmYj/ipTgEBiiskwHZKH5Ul4A/vKpm2ciLh.js","#framer/local/canvasComponent/vwd9GHTJP/vwd9GHTJP.js":"https://framerusercontent.com/modules/uTu5hArCw32fZZ2NlwYP/MxctQu3sH96biVWmjKKX/vwd9GHTJP.js","#framer/local/canvasComponent/w20F4fU7i/w20F4fU7i.js":"https://framerusercontent.com/modules/9WRWZxhtEc0aEuV9jkRF/GAIz7YOghTrplDND8qYB/w20F4fU7i.js","#framer/local/canvasComponent/Wfz6sbrn0/Wfz6sbrn0.js":"https://framerusercontent.com/modules/Aopj86t55WAO8sqJCGsU/JCU0J14bku1PusLrpPw8/Wfz6sbrn0.js","#framer/local/canvasComponent/wiLUxVe42/wiLUxVe42.js":"https://framerusercontent.com/modules/aqtC6PJO5tD6huVJuqLe/4K7lHDx0sCxs4PBa2mwN/wiLUxVe42.js","#framer/local/canvasComponent/wXlJ3V0RH/wXlJ3V0RH.js":"https://framerusercontent.com/modules/qqBZWhTbu3r1BtYPeG5k/vRw4zw2b6oKqG28nQWYu/wXlJ3V0RH.js","#framer/local/canvasComponent/Wyff7RHgu/Wyff7RHgu.js":"https://framerusercontent.com/modules/qpI9oV8lN0xeCrQfLlWz/NLdcFXfRhp6P5EevHfvB/Wyff7RHgu.js","#framer/local/canvasComponent/wZ3ugB2An/wZ3ugB2An.js":"https://framerusercontent.com/modules/iQIbs1qb5sPtubBXSggB/GZDoh1U9HzD24jNS5flA/wZ3ugB2An.js","#framer/local/canvasComponent/ygW146Z3v/ygW146Z3v.js":"https://framerusercontent.com/modules/8fzdhTU35TTCR2DUXbSL/VVHqFK45ybTb9sJj4uLj/ygW146Z3v.js","#framer/local/canvasComponent/zQieywu9N/zQieywu9N.js":"https://framerusercontent.com/modules/pXIla6WCXDRJbk6sb1jr/1ZQd14iGJW9hjEroX1VE/zQieywu9N.js","#framer/local/collection/NBM_IbLPh/NBM_IbLPh.js":"https://framerusercontent.com/modules/yTTqhHfsqX46gZKJfVCm/yHfnMtlDf8AEsfogkTG1/NBM_IbLPh.js","#framer/local/collection/o20WuO9kM/o20WuO9kM.js":"https://framerusercontent.com/modules/9yDZkGEqYhuRh4Z0oayc/gfFWRaXh4L7gL5RuxDXM/o20WuO9kM.js","#framer/local/componentPresets/componentPresets/componentPresets.js":"https://framerusercontent.com/modules/tKrljwGmiUGZC9Fe5jmL/sRzMGgIj3nBKQT7W1eDl/componentPresets.js","#framer/local/css/CHX4TW73y/CHX4TW73y.js":"https://framerusercontent.com/modules/a7yJdl5ye1GYpbJ5jdhj/lKkznI1DI4nVWVWFGh7I/CHX4TW73y.js","#framer/local/css/GcYxE5ig6/GcYxE5ig6.js":"https://framerusercontent.com/modules/v5zqy6Vx9oiBcVlNYumW/x7MoslBKGNMQDQD9gEU3/GcYxE5ig6.js","#framer/local/css/GUmqEicwe/GUmqEicwe.js":"https://framerusercontent.com/modules/ty2wqCEFmrhChFvcL28L/NQP3Op1Xdk4pNifZbHtw/GUmqEicwe.js","#framer/local/css/Im8yuoTZa/Im8yuoTZa.js":"https://framerusercontent.com/modules/fmEZjl0XyoKSUiefC54K/ZgGKLKtAm21HS6N79EEc/Im8yuoTZa.js","#framer/local/css/KRqmZpwbm/KRqmZpwbm.js":"https://framerusercontent.com/modules/rTsa6DErF9OvG7HSxFH2/dJu5HBU4oivDP4wRx2Zl/KRqmZpwbm.js","#framer/local/css/NqE6zDPgU/NqE6zDPgU.js":"https://framerusercontent.com/modules/304IBIo8CsMNoRpmQzKd/8Zvnswkq3ggbN7NwEEsA/NqE6zDPgU.js","#framer/local/css/sj87_smCl/sj87_smCl.js":"https://framerusercontent.com/modules/5Ij7P3uAQCXL3mjNJLYV/67yJyOJa8i2w0mXTLn2Y/sj87_smCl.js","#framer/local/css/TdJ2zQB9G/TdJ2zQB9G.js":"https://framerusercontent.com/modules/4UynXJmwhknMwW0y0hDj/DVsNqKg36Y33BQLKLrvc/TdJ2zQB9G.js","#framer/local/css/uOGvvkAru/uOGvvkAru.js":"https://framerusercontent.com/modules/pWsuwoMN2xin8uRXxnDp/W2Sad1uzuicWipB1yhay/uOGvvkAru.js","#framer/local/css/v4PWmgpAs/v4PWmgpAs.js":"https://framerusercontent.com/modules/bnp4xFzLP0oskVX2zjE6/h94WZfMAw6eUzUz8NvsZ/v4PWmgpAs.js","#framer/local/css/wHEZ6NkMH/wHEZ6NkMH.js":"https://framerusercontent.com/modules/kO3PVyNrJG71bQ3bNlpC/91khngQiRa3l9kPhEyqk/wHEZ6NkMH.js","#framer/local/css/Y1UR2y0W_/Y1UR2y0W_.js":"https://framerusercontent.com/modules/os9yFokt0KYs2WVPSx30/YkbhchhHg6k3BWljE2ho/Y1UR2y0W_.js","#framer/local/screen/augiA20Il/augiA20Il.js":"https://framerusercontent.com/modules/uvdpWCepP8fAcMhB8bmT/4PwDNrmIofhwgmbjBHvu/augiA20Il.js","#framer/local/screen/bv_Sdt4qg/bv_Sdt4qg.js":"https://framerusercontent.com/modules/ypFYLdGFiIoaxH49lYln/NmWOas3yvCvH22zSElON/bv_Sdt4qg.js","#framer/local/screen/cX2Ymwn5I/cX2Ymwn5I.js":"https://framerusercontent.com/modules/79sA0gAau0N6EAkKtzT8/fNPBvyO77jzOuzjmfbmk/cX2Ymwn5I.js","#framer/local/screen/meNNVlbTJ/meNNVlbTJ.js":"https://framerusercontent.com/modules/xTn7uv4aI4Yc6MyxrxSW/GoBCWjwhvLL9VkUE5u5B/meNNVlbTJ.js","#framer/local/siteMetadata/siteMetadata/siteMetadata.js":"https://framerusercontent.com/modules/vGCvLMJgCs098gTlCGC2/6e9yAM0sLSHxkfPV8cj2/siteMetadata.js","#framer/local/webPageMetadata/meNNVlbTJ/meNNVlbTJ.js":"https://framerusercontent.com/modules/fumK9TwVtxiKMukhcdse/UE3K6vIEv4M9ZZ85fsgo/meNNVlbTJ.js","#framer/local/webPageMetadata/cX2Ymwn5I/cX2Ymwn5I.js":"https://framerusercontent.com/modules/j261HnuKyvKPoDrHjk8B/NDJEZbiB8m34FeM6NCTG/cX2Ymwn5I.js","#framer/local/webPageMetadata/bv_Sdt4qg/bv_Sdt4qg.js":"https://framerusercontent.com/modules/eAzZxkT7zf1zxdwEKSiN/NqBwIW2rrkBpzacT7hh3/bv_Sdt4qg.js","#framer/local/webPageMetadata/augiA20Il/augiA20Il.js":"https://framerusercontent.com/modules/pnvHNjfoucBHHIOgIHDc/DTvJzN3fApLOztIo6z1v/augiA20Il.js","#framer/local/codeFile/FGxZluj/Examples.js":"https://framerusercontent.com/modules/moYcX4JwRhJQUJ0FwDV4/XTdQjQ7D3xXLlhHkHlYE/Examples.js","framer":"https://app.framerstatic.com/framer.FGVXATZ3.mjs","framer-motion":"https://app.framerstatic.com/framer-motion.KB2VX5JL.mjs","react":"https://ga.jspm.io/npm:react@18.2.0/index.js","react-dom":"https://ga.jspm.io/npm:react-dom@18.2.0/index.js","react-dom/client":"https://ga.jspm.io/npm:react-dom@18.2.0/client.js","react-dom/server":"https://ga.jspm.io/npm:react-dom@18.2.0/server.browser.js","react/jsx-runtime":"https://ga.jspm.io/npm:react@18.2.0/jsx-runtime.js"},"scopes":{"https://ga.jspm.io/":{"@babel/runtime/helpers/esm/defineProperty":"https://ga.jspm.io/npm:@babel/runtime@7.16.7/helpers/esm/defineProperty.js","@babel/runtime/helpers/esm/extends":"https://ga.jspm.io/npm:@babel/runtime@7.16.7/helpers/esm/extends.js","@chevrotain/utils":"https://ga.jspm.io/npm:@chevrotain/utils@9.1.0/lib/src/api.js","@motionone/animation":"https://ga.jspm.io/npm:@motionone/animation@10.12.0/dist/index.es.js","@motionone/easing":"https://ga.jspm.io/npm:@motionone/easing@10.12.0/dist/index.es.js","@motionone/generators":"https://ga.jspm.io/npm:@motionone/generators@10.12.0/dist/index.es.js","@motionone/types":"https://ga.jspm.io/npm:@motionone/types@10.12.0/dist/index.es.js","@react-spring/animated":"https://ga.jspm.io/npm:@react-spring/animated@9.4.1/dist/react-spring-animated.esm.js","@react-spring/core":"https://ga.jspm.io/npm:@react-spring/core@9.4.1/dist/react-spring-core.esm.js","@react-spring/rafz":"https://ga.jspm.io/npm:@react-spring/rafz@9.4.1/dist/react-spring-rafz.esm.js","@react-spring/shared":"https://ga.jspm.io/npm:@react-spring/shared@9.4.1/dist/react-spring-shared.esm.js","@react-spring/three":"https://ga.jspm.io/npm:@react-spring/three@9.4.1/dist/react-spring-three.esm.js","@react-spring/types/animated":"https://ga.jspm.io/npm:@react-spring/types@9.4.1/animated.js","@react-spring/types/interpolation":"https://ga.jspm.io/npm:@react-spring/types@9.4.1/interpolation.js","@use-gesture/core":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/dist/use-gesture-core.esm.js","@use-gesture/core/actions":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/actions/dist/use-gesture-core-actions.esm.js","@use-gesture/core/types":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/types/dist/use-gesture-core-types.esm.js","@use-gesture/core/utils":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/utils/dist/use-gesture-core-utils.esm.js","@use-gesture/react":"https://ga.jspm.io/npm:@use-gesture/react@10.2.4/dist/use-gesture-react.esm.js","abort-controller":"https://ga.jspm.io/npm:abort-controller@3.0.0/browser.js","abortcontroller-polyfill/dist/cjs-ponyfill":"https://ga.jspm.io/npm:abortcontroller-polyfill@1.7.3/dist/cjs-ponyfill.js","bidi-js":"https://ga.jspm.io/npm:bidi-js@1.0.2/dist/bidi.js","buffer":"https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.14/nodelibs/browser/buffer.js","chevrotain":"https://ga.jspm.io/npm:chevrotain@9.1.0/lib_esm/api_esm.mjs","debounce":"https://ga.jspm.io/npm:debounce@1.2.1/index.js","detect-gpu":"https://ga.jspm.io/npm:detect-gpu@3.1.30/dist/detect-gpu.esm.js","fast-deep-equal":"https://ga.jspm.io/npm:fast-deep-equal@3.1.3/index.js","fflate":"https://ga.jspm.io/npm:fflate@0.6.10/esm/browser.js","framesync":"https://ga.jspm.io/npm:framesync@6.0.1/dist/es/index.mjs","hey-listen":"https://ga.jspm.io/npm:hey-listen@1.0.8/dist/index.js","ktx-parse":"https://ga.jspm.io/npm:ktx-parse@0.2.2/dist/ktx-parse.modern.js","lodash.omit":"https://ga.jspm.io/npm:lodash.omit@4.5.0/index.js","lodash.pick":"https://ga.jspm.io/npm:lodash.pick@4.4.0/index.js","lodash/get":"https://ga.jspm.io/npm:lodash@4.17.21/get.js","lodash/isArray":"https://ga.jspm.io/npm:lodash@4.17.21/isArray.js","lodash/isFunction":"https://ga.jspm.io/npm:lodash@4.17.21/isFunction.js","lodash/isNil":"https://ga.jspm.io/npm:lodash@4.17.21/isNil.js","lodash/isNumber":"https://ga.jspm.io/npm:lodash@4.17.21/isNumber.js","lodash/isPlainObject":"https://ga.jspm.io/npm:lodash@4.17.21/isPlainObject.js","lodash/isString":"https://ga.jspm.io/npm:lodash@4.17.21/isString.js","lodash/keys":"https://ga.jspm.io/npm:lodash@4.17.21/keys.js","mmd-parser":"https://ga.jspm.io/npm:mmd-parser@1.0.4/build/mmdparser.js","node-fetch":"https://ga.jspm.io/npm:node-fetch@2.6.7/browser.js","object-assign":"https://ga.jspm.io/npm:object-assign@4.1.1/index.js","opentype.js":"https://ga.jspm.io/npm:opentype.js@1.3.4/dist/opentype.module.js","potpack":"https://ga.jspm.io/npm:potpack@1.0.2/index.mjs","process":"https://framer.com/m/framer/empty.js@0.1.0","prop-types":"https://ga.jspm.io/npm:prop-types@15.8.0/index.js","proxy-compare":"https://ga.jspm.io/npm:proxy-compare@2.0.2/dist/index.modern.js","react-composer":"https://ga.jspm.io/npm:react-composer@5.0.2/es/index.js","react-merge-refs":"https://ga.jspm.io/npm:react-merge-refs@1.1.0/dist/react-merge-refs.esm.js","react-reconciler":"https://ga.jspm.io/npm:react-reconciler@0.26.2/index.js","react-use-measure":"https://ga.jspm.io/npm:react-use-measure@2.1.1/dist/web.js","regexp-to-ast":"https://ga.jspm.io/npm:regexp-to-ast@0.5.0/lib/regexp-to-ast.js","scheduler":"https://ga.jspm.io/npm:scheduler@0.23.0/index.js","style-value-types":"https://ga.jspm.io/npm:style-value-types@5.0.0/dist/es/index.mjs","three-mesh-bvh":"https://ga.jspm.io/npm:three-mesh-bvh@0.5.3/src/index.js","three-stdlib":"https://ga.jspm.io/npm:three-stdlib@2.6.4/index.js","three/examples/js/libs/stats.min":"https://ga.jspm.io/npm:three@0.136.0/examples/js/libs/stats.min.js","troika-three-text":"https://ga.jspm.io/npm:troika-three-text@0.44.0/dist/troika-three-text.esm.js","troika-three-utils":"https://ga.jspm.io/npm:troika-three-utils@0.44.0/dist/troika-three-utils.esm.js","troika-worker-utils":"https://ga.jspm.io/npm:troika-worker-utils@0.44.0/dist/troika-worker-utils.esm.js","tslib":"https://ga.jspm.io/npm:tslib@2.4.0/tslib.es6.js","use-asset":"https://ga.jspm.io/npm:use-asset@1.0.4/dist/index.cjs.js","valtio/vanilla":"https://ga.jspm.io/npm:valtio@1.2.9/esm/vanilla.js","zstddec":"https://ga.jspm.io/npm:zstddec@0.0.2/dist/zstddec.js","zustand":"https://ga.jspm.io/npm:zustand@3.6.8/esm/index.js","fs":"https://framer.com/m/framer/empty.js@0.1.0"},"https://esm.sh/":{"fs":"https://framer.com/m/framer/empty.js@0.1.0","process":"https://framer.com/m/framer/empty.js@0.1.0","scheduler":"https://ga.jspm.io/npm:scheduler@0.23.0/index.js"},"https://ga.jspm.io/npm:framer-motion-3d@6.0.0-beta.8/":{"tslib":"https://ga.jspm.io/npm:tslib@2.3.1/tslib.es6.js"}}}</script>
+    <script async="" src="./Nebula Executor_files/es-module-shims.js.download" crossorigin="anonymous" data-framer-es-module-shims=""></script>
     <!-- Start of headStart -->
-
+    
     <!-- End of headStart -->
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content="Framer f26e712" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Framer f26e712">
     <title>Nebula Executor</title>
-    <meta
-      name="description"
-      content="The best executor with flawless looks and performance."
-    />
-    <meta name="framer-search-index" content="indexing" />
-    <link
-      href="https://framerusercontent.com/images/kalGNctpsWCV9AGWBj95nREdimI.png"
-      rel="icon"
-      media="(prefers-color-scheme: light)"
-    />
-    <link
-      href="https://framerusercontent.com/images/kalGNctpsWCV9AGWBj95nREdimI.png"
-      rel="icon"
-      media="(prefers-color-scheme: dark)"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://framerusercontent.com/images/kalGNctpsWCV9AGWBj95nREdimI.png"
-    />
+    <meta name="description" content="The best executor with flawless looks and performance.">
+    <meta name="framer-search-index" content="indexing">
+    <link href="https://framerusercontent.com/images/kalGNctpsWCV9AGWBj95nREdimI.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="https://framerusercontent.com/images/kalGNctpsWCV9AGWBj95nREdimI.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/images/kalGNctpsWCV9AGWBj95nREdimI.png">
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Nebula Executor" />
-    <meta
-      property="og:description"
-      content="The best executor with flawless looks and performance."
-    />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nebula Executor">
+    <meta property="og:description" content="The best executor with flawless looks and performance.">
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nebula Executor" />
-    <meta
-      name="twitter:description"
-      content="The best executor with flawless looks and performance."
-    />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nebula Executor">
+    <meta name="twitter:description" content="The best executor with flawless looks and performance.">
     <style data-framer-css-ssr="">
-      html,
-      body,
-      #main {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      :root {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      * {
-        box-sizing: border-box;
-        -webkit-font-smoothing: inherit;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      figure {
-        margin: 0;
-      }
-      body,
-      input,
-      textarea,
-      select,
-      button {
-        font-size: 12px;
-        font-family: sans-serif;
-      }
-      body {
-        --token-7c92defb-aea7-4d14-b6f7-d2c083c349bf: rgb(11, 11, 13);
-        --token-4f70b3eb-e9f7-4fc2-88a0-8b6948a44720: rgb(14, 14, 16);
-        --token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4: rgb(148, 159, 166);
-        --token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0: rgb(25, 25, 26);
-        --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2: rgb(255, 255, 255);
-        --token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed: rgb(234, 168, 121);
-        --token-837cf3f0-d086-4476-ba7d-8408c733c615: rgb(20, 20, 23);
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
+        html, body, #main {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-      }
-t-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
-          U+A640-A69F, U+FE2E-FE2F;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        unicode-range: U+1F00-1FFF;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        unicode-range: U+0370-03FF;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
-          U+A640-A69F, U+FE2E-FE2F;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-        unicode-range: U+1F00-1FFF;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-        unicode-range: U+0370-03FF;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: "Inter";
-        src: url("https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-      }
-      @font-face {
-        font-family: "Manrope";
-        src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/NGBUP45ES3F7RD5XGKPEDJ6QEPO4TMOK/EXDVWJ2EDDVVV65UENMX33EDDYBX6OF7/6P4FPMFQH7CCC7RZ4UU4NKSGJ2RLF7V5.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 700;
-      }
-      @font-face {
-        font-family: "Manrope";
-        src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/7EWHG4AMROQSXDCQTDPGBVASATB7CED2/TJSQTK5FHJ2MYKML5IXF2G6YTGFJLTYL/K4ZMLVLHYIFVTTTWGVOTVGOFUUX7NVGI.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 800;
-      }
-      @font-face {
-        font-family: "Manrope";
-        src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/2TYFCBHUANEXS6QGR5EQDUNAFH6LSWM3/AYNOU3VEA4LRTDNKJQUFNVNUTYSGOUOP/UXO4O7K2G3HI3D2VKD7UXVJVJD26P4BQ.woff2");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-      }
-      @font-face {
-        font-family: "Inter Placeholder";
-        src: local("Arial");
-        ascent-override: 89.79%;
-        descent-override: 22.36%;
-        line-gap-override: 0%;
-        size-adjust: 107.89%;
-      }
-      @font-face {
-        font-family: "Manrope Placeholder";
-        src: local("Arial");
-        ascent-override: 102.74%;
-        descent-override: 28.91%;
-        line-gap-override: 0%;
-        size-adjust: 103.76%;
-      }
-    </style>
+        :root {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: inherit;
+        }
+        h1, h2, h3, h4, h5, h6, p, figure {
+            margin: 0;
+        }
+        body, input, textarea, select, button { font-size: 12px; font-family: sans-serif; }
+        body { --token-7c92defb-aea7-4d14-b6f7-d2c083c349bf: rgb(11, 11, 13);--token-4f70b3eb-e9f7-4fc2-88a0-8b6948a44720: rgb(14, 14, 16);--token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4: rgb(148, 159, 166);--token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0: rgb(25, 25, 26);--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2: rgb(255, 255, 255);--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed: rgb(234, 168, 121);--token-837cf3f0-d086-4476-ba7d-8408c733c615: rgb(20, 20, 23); }
+@media (prefers-color-scheme: dark) { body {  } }
+        
 
+            position: fixed;
+            bottom: 0;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            pointer-events: none;
+            z-index: 314159;
+        }
+        @font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Manrope"; src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/NGBUP45ES3F7RD5XGKPEDJ6QEPO4TMOK/EXDVWJ2EDDVVV65UENMX33EDDYBX6OF7/6P4FPMFQH7CCC7RZ4UU4NKSGJ2RLF7V5.woff2"); font-display: swap; font-style: normal; font-weight: 700 }
+@font-face { font-family: "Manrope"; src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/7EWHG4AMROQSXDCQTDPGBVASATB7CED2/TJSQTK5FHJ2MYKML5IXF2G6YTGFJLTYL/K4ZMLVLHYIFVTTTWGVOTVGOFUUX7NVGI.woff2"); font-display: swap; font-style: normal; font-weight: 800 }
+@font-face { font-family: "Manrope"; src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/2TYFCBHUANEXS6QGR5EQDUNAFH6LSWM3/AYNOU3VEA4LRTDNKJQUFNVNUTYSGOUOP/UXO4O7K2G3HI3D2VKD7UXVJVJD26P4BQ.woff2"); font-display: swap; font-style: normal; font-weight: 400 }
+@font-face { font-family: "Inter Placeholder"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0.00%; size-adjust: 107.89% }
+@font-face { font-family: "Manrope Placeholder"; src: local("Arial"); ascent-override: 102.74%; descent-override: 28.91%; line-gap-override: 0.00%; size-adjust: 103.76% }
+    </style>
+    
     <!-- Start of headEnd -->
-
+    
     <!-- End of headEnd -->
-    <style type="text/css" data-framer-css="true"></style>
-    <meta name="robots" content="max-image-preview:large" />
-    <style type="text/css">
-      #__framer-editorbar.mode_normal {
-        overflow: hidden;
-        position: fixed;
-        bottom: 10px;
-        height: 34px;
-        border: none;
-        z-index: 2147483647;
-      }
+<style type="text/css" data-framer-css="true"></style><meta name="robots" content="max-image-preview:large"><style type="text/css">
+#__framer-editorbar.mode_normal {
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    height: 34px;
+    border: none;
+    z-index: 2147483647;
+}
 
-      #__framer-editorbar.mode_normal.status_hidden {
-        display: none;
-      }
+#__framer-editorbar.mode_normal.status_hidden {
+    display: none;
+}
 
-      #__framer-editorbar.mode_normal.status_measuring {
-        left: 0;
-        width: 100%;
-      }
+#__framer-editorbar.mode_normal.status_measuring {
+    left: 0;
+    width: 100%;
+}
 
-      #__framer-editorbar.mode_normal[width] {
-        box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.2),
-          0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-        left: 50%;
-        transform: translateX(-50%);
-      }
+#__framer-editorbar.mode_normal[width] {
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-      #__framer-editorbar.mode_subtle {
-        --padding-right: 10px;
-        overflow: hidden;
-        position: fixed;
-        right: var(--padding-right);
-        border: none;
-        z-index: 2147483647;
-        top: 0;
-        width: calc(100vw - var(--padding-right));
-        height: 100vh;
-      }
+#__framer-editorbar.mode_subtle {
+    --padding-right: 10px;
+    overflow: hidden;
+    position: fixed;
+    right: var(--padding-right);
+    border: none;
+    z-index: 2147483647;
+    top: 0;
+    width: calc(100vw - var(--padding-right));
+    height: 100vh;
+}
 
-      #__framer-editorbar.mode_subtle.status_hidden {
-        display: none;
-      }
+#__framer-editorbar.mode_subtle.status_hidden {
+    display: none;
+}
 
-      #__framer-editorbar.mode_subtle.status_measuring {
-        clip-path: unset;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="./Nebula Executor_files/editorbar-controller.JPKZ7OPA.css"
-    />
-  </head>
-  <body>
-    <script
-      async=""
-      src="./Nebula Executor_files/script"
-      data-fid="481ea9f912a01fb6641bd3cdb52631f03c6ab7538c3a4ef1ccae3cf8ebb0114b"
-    ></script>
+#__framer-editorbar.mode_subtle.status_measuring {
+    clip-path: unset;
+}
+</style><link rel="stylesheet" href="./Nebula Executor_files/editorbar-controller.JPKZ7OPA.css"></head>
+<body>
+    <script async="" src="./Nebula Executor_files/script" data-fid="481ea9f912a01fb6641bd3cdb52631f03c6ab7538c3a4ef1ccae3cf8ebb0114b"></script>
     <!-- Start of bodyStart -->
-
+    
     <!-- End of bodyStart -->
-    <div id="main">
-      <style data-framer-html-style="">
-        html body {
-          background: var(
-            --token-7c92defb-aea7-4d14-b6f7-d2c083c349bf,
-            rgb(11, 11, 13)
-          );
-        }
-      </style>
-      <div
-        data-framer-root=""
-        class="framer-ELfEG framer-LugQl framer-WKM22 framer-z6TJW framer-72rtr7"
-        style="min-height: 100vh; width: auto"
-      >
-        <section
-          class="framer-a9zdix"
-          data-framer-name="Hero section"
-          id="hero"
-        >
-          <div
-            data-framer-background-image-wrapper="true"
-            style="position: absolute; border-radius: inherit; inset: 0px"
-          >
-            <img
-              decoding="async"
-              src="./Nebula Executor_files/HG3qeAUg4hBOuySKFRcvI8r4g.gif"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: inherit;
-                object-position: center center;
-                object-fit: cover;
-              "
-            />
-          </div>
-          <div class="framer-vqu470" data-framer-name="Container">
-            <div class="framer-67b80l" data-framer-name="Content">
-              <div
-                class="framer-16cs22z"
-                data-framer-appear-id="16cs22z"
-                data-framer-name="Heading"
-                style="opacity: 1; will-change: transform; transform: none"
-              >
-                <div
-                  class="framer-1dd1e4n"
-                  data-framer-component-type="RichTextContainer"
-                  style="
-                    outline: none;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    flex-shrink: 0;
-                    transform: none;
-                    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 0px;
-                    opacity: 1;
-                    will-change: transform;
-                  "
-                >
-                  <h1
-                    class="framer-text framer-styles-preset-cuixv9"
-                    data-styles-preset="NqE6zDPgU"
-                    style="
-                      --framer-text-alignment: center;
-                      --framer-text-color: rgb(255, 255, 255);
-                    "
-                  >
-                    <span
-                      data-text-fill="true"
-                      class="framer-text"
-                      style="
-                        background-image: linear-gradient(
-                          270deg,
-                          rgb(146, 127, 228) 0%,
-                          rgb(253, 187, 114) 100%
-                        );
-                      "
-                      >Nebula Executor</span
-                    >
-                  </h1>
-                </div>
-                <div
-                  class="framer-fdb0rm"
-                  data-framer-component-type="RichTextContainer"
-                  style="
-                    outline: none;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    flex-shrink: 0;
-                    transform: none;
-                  "
-                >
-                  <p
-                    class="framer-text framer-styles-preset-pz5li8"
-                    data-styles-preset="KRqmZpwbm"
-                    style="--framer-text-alignment: center"
-                  >
-                    With flawless performance and looks.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          class="framer-1cgfs1d"
-          data-framer-name="Features section"
-          id="features"
-        >
-          <div class="framer-k4rg9k" data-framer-name="Container">
-            <div
-              class="framer-1bu7oxl"
-              data-framer-name="Heading"
-              style="will-change: transform; opacity: 1; transform: none"
-            >
-              <div
-                class="framer-18585uf"
-                data-framer-component-type="RichTextContainer"
-                style="
-                  outline: none;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: flex-start;
-                  flex-shrink: 0;
-                  transform: none;
-                "
-              >
-                <h2
-                  class="framer-text framer-styles-preset-1qqhcei"
-                  data-styles-preset="GUmqEicwe"
-                >
-                  Download today, and experience the top performance of Nebula.
-                </h2>
-              </div>
-              <div
-                class="framer-18pcfok"
-                data-framer-component-type="RichTextContainer"
-                style="
-                  outline: none;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: flex-start;
-                  flex-shrink: 0;
-                  transform: none;
-                "
-              >
-                <p
-                  class="framer-text framer-styles-preset-pz5li8"
-                  data-styles-preset="KRqmZpwbm"
-                  style="--framer-text-alignment: center"
-                >
-                  Coming Soon.
-                </p>
-              </div>
-            </div>
-            <div class="framer-1svd3yv" data-framer-name="Features list">
-              <div class="framer-16r7dva" data-framer-name="Wrapper">
-                <div
-                  class="framer-175gwrb hidden-j3ifol"
-                  data-framer-name="Divider"
-                ></div>
-                <div
-                  class="framer-14hhuwd hidden-j3ifol"
-                  data-framer-name="Divider"
-                ></div>
-              </div>
-              <div class="framer-1l9uenn" data-framer-name="Divider"></div>
-              <div class="framer-1aq683q" data-framer-name="Wrapper">
-                <div
-                  class="framer-dfufwl-container"
-                  style="will-change: transform; opacity: 1; transform: none"
-                >
-                  <div
-                    class="framer-nDKsd framer-CkWfB framer-MGUU9 framer-1u5ux0a framer-v-1u5ux0a"
-                    data-framer-name="Desktop"
-                    style="width: 100%; opacity: 1"
-                  >
-                    <div class="framer-mneos8-container" style="opacity: 1">
-                      <div style="display: contents">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 256 256"
-                          focusable="false"
-                          color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))"
-                          style="
-                            user-select: none;
-                            width: 100%;
-                            height: 100%;
-                            display: inline-block;
-                            fill: var(
-                              --token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed,
-                              rgb(234, 168, 121)
-                            );
-                            color: var(
-                              --token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed,
-                              rgb(234, 168, 121)
-                            );
-                            flex-shrink: 0;
-                          "
-                        >
-                          <g
-                            color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))"
-                            weight="regular"
-                          >
-                            <path
-                              d="M207,50.25A87.46,87.46,0,0,0,144.6,24h-.33A87.48,87.48,0,0,0,82,49.81L20.61,112a16,16,0,0,0,.06,22.56l28.66,28.66a15.92,15.92,0,0,0,11.32,4.69h.09a16,16,0,0,0,11.36-4.82L133,100.69a16.08,16.08,0,0,1,22.41-.21,15.6,15.6,0,0,1,4.73,11.19,16.89,16.89,0,0,1-4.85,12L93,183.88a16,16,0,0,0-.17,22.79l28.66,28.66a16.06,16.06,0,0,0,22.52.12L205.81,175C240.26,140.5,240.79,84.56,207,50.25ZM60.65,151.89,32,123.24,55.8,99.12l28.52,28.52ZM132.79,224l-28.68-28.65,24.38-23.57L157,200.32Zm61.76-60.44-26.11,25.54L140,160.68l26.44-25.57.1-.09a33,33,0,0,0,9.57-23.5A31.44,31.44,0,0,0,166.47,89a32.2,32.2,0,0,0-44.9.5L95.49,116.18,67,87.74,93.35,61.09A71.51,71.51,0,0,1,144.27,40h.27a71.55,71.55,0,0,1,51.05,21.48C223.25,89.55,222.75,135.38,194.55,163.58Z"
-                            ></path>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
-                    <div
-                      class="framer-1ab69f9"
-                      data-framer-appear-id="1ab69f9"
-                      data-framer-component-type="RichTextContainer"
-                      style="
-                        outline: none;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        flex-shrink: 0;
-                        --extracted-1w1cjl5: var(
-                          --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                          rgb(255, 255, 255)
-                        );
-                        --framer-link-text-color: rgb(0, 153, 255);
-                        --framer-link-text-decoration: underline;
-                        will-change: transform;
-                        opacity: 1;
-                        transform: none;
-                      "
-                    >
-                      <h6
-                        class="framer-text framer-styles-preset-bhpk9h"
-                        data-styles-preset="Y1UR2y0W_"
-                        style="
-                          --framer-text-color: var(
-                            --extracted-1w1cjl5,
-                            var(
-                              --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                              rgb(255, 255, 255)
-                            )
-                          );
-                        "
-                      >
-                        High UNC and sUNC
-                      </h6>
-                    </div>
-                    <div
-                      class="framer-1ywzvt3"
-                      data-framer-appear-id="1ywzvt3"
-                      data-framer-component-type="RichTextContainer"
-                      style="
-                        outline: none;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        flex-shrink: 0;
-                        --framer-link-text-color: rgb(0, 153, 255);
-                        --framer-link-text-decoration: underline;
-                        will-change: transform;
-                        opacity: 1;
-                        transform: none;
-                      "
-                    >
-                      <p
-                        class="framer-text framer-styles-preset-1dkk44e"
-                        data-styles-preset="v4PWmgpAs"
-                      >
-                        Nebula can execute almost all scripts thanks to it's
-                        high UNC and sUNC.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="framer-82vpt5 hidden-j3ifol"
-                  data-framer-name="Divider"
-                ></div>
-                <div
-                  class="framer-1wq7kx3 hidden-j3ifol"
-                  data-framer-name="Divider"
-                ></div>
-                <div
-                  class="framer-x3dznm-container"
-                  style="will-change: transform; opacity: 1; transform: none"
-                >
-                  <div
-                    class="framer-nDKsd framer-CkWfB framer-MGUU9 framer-1u5ux0a framer-v-1u5ux0a"
-                    data-framer-name="Desktop"
-                    style="width: 100%; opacity: 1"
-                  >
-                    <div class="framer-mneos8-container" style="opacity: 1">
-                      <div style="display: contents">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 256 256"
-                          focusable="false"
-                          color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))"
-                          style="
-                            user-select: none;
-                            width: 100%;
-                            height: 100%;
-                            display: inline-block;
-                            fill: var(
-                              --token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed,
-                              rgb(234, 168, 121)
-                            );
-                            color: var(
-                              --token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed,
-                              rgb(234, 168, 121)
-                            );
-                            flex-shrink: 0;
-                          "
-                        >
-                          <g
-                            color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))"
-                            weight="regular"
-                          >
-                            <path
-                              d="M216,48H40A16,16,0,0,0,24,64V224a15.84,15.84,0,0,0,9.25,14.5A16.05,16.05,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78l.09-.07L83,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H80a8,8,0,0,0-5.23,1.95L40,224V64H216Z"
-                            ></path>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
-                    <div
-                      class="framer-1ab69f9"
-                      data-framer-appear-id="1ab69f9"
-                      data-framer-component-type="RichTextContainer"
-                      style="
-                        outline: none;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        flex-shrink: 0;
-                        --extracted-1w1cjl5: var(
-                          --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                          rgb(255, 255, 255)
-                        );
-                        --framer-link-text-color: rgb(0, 153, 255);
-                        --framer-link-text-decoration: underline;
-                        will-change: transform;
-                        opacity: 1;
-                        transform: none;
-                      "
-                    >
-                      <h6
-                        class="framer-text framer-styles-preset-bhpk9h"
-                        data-styles-preset="Y1UR2y0W_"
-                        style="
-                          --framer-text-color: var(
-                            --extracted-1w1cjl5,
-                            var(
-                              --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                              rgb(255, 255, 255)
-                            )
-                          );
-                        "
-                      >
-                        Trusted Owners
-                      </h6>
-                    </div>
-                    <div
-                      class="framer-1ywzvt3"
-                      data-framer-appear-id="1ywzvt3"
-                      data-framer-component-type="RichTextContainer"
-                      style="
-                        outline: none;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        flex-shrink: 0;
-                        --framer-link-text-color: rgb(0, 153, 255);
-                        --framer-link-text-decoration: underline;
-                        will-change: transform;
-                        opacity: 1;
-                        transform: none;
-                      "
-                    >
-                      <p
-                        class="framer-text framer-styles-preset-1dkk44e"
-                        data-styles-preset="v4PWmgpAs"
-                      >
-                        Nebula Executor has trusted owners so you never have to
-                        worry about getting ratted.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="framer-5lbap2" data-framer-name="FAQ section">
-          <div class="framer-sdjymb" data-framer-name="Container">
-            <div
-              class="framer-454o4g"
-              data-framer-name="Heading"
-              style="will-change: transform; opacity: 1; transform: none"
-            >
-              <div
-                class="framer-k00t03"
-                data-framer-component-type="RichTextContainer"
-                style="
-                  outline: none;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: flex-start;
-                  flex-shrink: 0;
-                  transform: none;
-                "
-              >
-                <h2
-                  class="framer-text framer-styles-preset-1qqhcei"
-                  data-styles-preset="GUmqEicwe"
-                >
-                  Frequently Asked Questions
-                </h2>
-              </div>
-            </div>
-            <div
-              class="framer-r78s2t-container"
-              style="will-change: transform; opacity: 1; transform: none"
-            >
-              <div
-                class="framer-FZX1b framer-1nrwaz2 framer-v-1nrwaz2"
-                data-border="true"
-                data-framer-name="Default"
-                style="
-                  --border-bottom-width: 1px;
-                  --border-color: var(
-                    --token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0,
-                    rgb(48, 50, 54)
-                  );
-                  --border-left-width: 1px;
-                  --border-right-width: 1px;
-                  --border-style: solid;
-                  --border-top-width: 1px;
-                  backdrop-filter: blur(30px);
-                  background-color: rgba(11, 11, 13, 0.8);
-                  max-width: 100%;
-                  width: 100%;
-                  border-radius: 20px;
-                  opacity: 1;
-                "
-              >
-                <div class="framer-1n55ecy-container" style="opacity: 1">
-                  <div
-                    class="framer-QSVrz framer-WKM22 framer-MGUU9 framer-1i7si7 framer-v-1i7si7"
-                    data-framer-name="Closed"
-                    style="width: 100%; opacity: 1"
-                  >
-                    <div
-                      class="framer-elvhaj"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabindex="0"
-                      style="opacity: 1"
-                    >
-                      <div
-                        class="framer-ks05xd"
-                        data-framer-component-type="RichTextContainer"
-                        style="
-                          outline: none;
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: flex-start;
-                          flex-shrink: 0;
-                          --extracted-r6o4lv: var(
-                            --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                            rgb(255, 255, 255)
-                          );
-                          --framer-link-text-color: rgb(0, 153, 255);
-                          --framer-link-text-decoration: underline;
-                          --framer-paragraph-spacing: 0px;
-                          transform: none;
-                          opacity: 1;
-                        "
-                      >
-                        <p
-                          class="framer-text framer-styles-preset-pz5li8"
-                          data-styles-preset="KRqmZpwbm"
-                          style="
-                            --framer-text-color: var(
-                              --extracted-r6o4lv,
-                              var(
-                                --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                                rgb(255, 255, 255)
-                              )
-                            );
-                          "
-                        >
-                          Is Nebula Executor safe to use?
-                        </p>
-                      </div>
-                      <div
-                        class="framer-1vrff1v"
-                        data-framer-name="Plus"
-                        style="opacity: 0.3; transform: none"
-                      >
-                        <div
-                          class="framer-1w0s6qg"
-                          style="
-                            background-color: var(
-                              --token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4,
-                              rgb(104, 114, 120)
-                            );
-                            border-radius: 10px;
-                            opacity: 1;
-                          "
-                        ></div>
-                        <div
-                          class="framer-7746uy"
-                          style="
-                            background-color: var(
-                              --token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4,
-                              rgb(104, 114, 120)
-                            );
-                            border-radius: 10px;
-                            opacity: 1;
-                          "
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="framer-18k7mc8"
-                  data-framer-name="Line"
-                  style="
-                    background-color: var(
-                      --token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0,
-                      rgb(25, 25, 26)
-                    );
-                    opacity: 1;
-                  "
-                ></div>
-                <div class="framer-89rdci-container" style="opacity: 1">
-                  <div
-                    class="framer-QSVrz framer-WKM22 framer-MGUU9 framer-1i7si7 framer-v-1i7si7"
-                    data-framer-name="Closed"
-                    style="width: 100%; opacity: 1"
-                  >
-                    <div
-                      class="framer-elvhaj"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabindex="0"
-                      style="opacity: 1"
-                    >
-                      <div
-                        class="framer-ks05xd"
-                        data-framer-component-type="RichTextContainer"
-                        style="
-                          outline: none;
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: flex-start;
-                          flex-shrink: 0;
-                          --extracted-r6o4lv: var(
-                            --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                            rgb(255, 255, 255)
-                          );
-                          --framer-link-text-color: rgb(0, 153, 255);
-                          --framer-link-text-decoration: underline;
-                          --framer-paragraph-spacing: 0px;
-                          transform: none;
-                          opacity: 1;
-                        "
-                      >
-                        <p
-                          class="framer-text framer-styles-preset-pz5li8"
-                          data-styles-preset="KRqmZpwbm"
-                          style="
-                            --framer-text-color: var(
-                              --extracted-r6o4lv,
-                              var(
-                                --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                                rgb(255, 255, 255)
-                              )
-                            );
-                          "
-                        >
-                          Can it execute scripts well?
-                        </p>
-                      </div>
-                      <div
-                        class="framer-1vrff1v"
-                        data-framer-name="Plus"
-                        style="opacity: 0.3; transform: none"
-                      >
-                        <div
-                          class="framer-1w0s6qg"
-                          style="
-                            background-color: var(
-                              --token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4,
-                              rgb(104, 114, 120)
-                            );
-                            border-radius: 10px;
-                            opacity: 1;
-                          "
-                        ></div>
-                        <div
-                          class="framer-7746uy"
-                          style="
-                            background-color: var(
-                              --token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4,
-                              rgb(104, 114, 120)
-                            );
-                            border-radius: 10px;
-                            opacity: 1;
-                          "
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="framer-4rq9z6"
-                  data-framer-name="Line"
-                  style="
-                    background-color: var(
-                      --token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0,
-                      rgb(25, 25, 26)
-                    );
-                    opacity: 1;
-                  "
-                ></div>
-                <div class="framer-1sgoni2-container" style="opacity: 1">
-                  <div
-                    class="framer-QSVrz framer-WKM22 framer-MGUU9 framer-1i7si7 framer-v-1i7si7"
-                    data-framer-name="Closed"
-                    style="width: 100%; opacity: 1"
-                  >
-                    <div
-                      class="framer-elvhaj"
-                      data-framer-name="Question"
-                      data-highlight="true"
-                      tabindex="0"
-                      style="opacity: 1"
-                    >
-                      <div
-                        class="framer-ks05xd"
-                        data-framer-component-type="RichTextContainer"
-                        style="
-                          outline: none;
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: flex-start;
-                          flex-shrink: 0;
-                          --extracted-r6o4lv: var(
-                            --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                            rgb(255, 255, 255)
-                          );
-                          --framer-link-text-color: rgb(0, 153, 255);
-                          --framer-link-text-decoration: underline;
-                          --framer-paragraph-spacing: 0px;
-                          transform: none;
-                          opacity: 1;
-                        "
-                      >
-                        <p
-                          class="framer-text framer-styles-preset-pz5li8"
-                          data-styles-preset="KRqmZpwbm"
-                          style="
-                            --framer-text-color: var(
-                              --extracted-r6o4lv,
-                              var(
-                                --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                                rgb(255, 255, 255)
-                              )
-                            );
-                          "
-                        >
-                          Where can I report bugs and issues?
-                        </p>
-                      </div>
-                      <div
-                        class="framer-1vrff1v"
-                        data-framer-name="Plus"
-                        style="opacity: 0.3; transform: none"
-                      >
-                        <div
-                          class="framer-1w0s6qg"
-                          style="
-                            background-color: var(
-                              --token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4,
-                              rgb(104, 114, 120)
-                            );
-                            border-radius: 10px;
-                            opacity: 1;
-                          "
-                        ></div>
-                        <div
-                          class="framer-7746uy"
-                          style="
-                            background-color: var(
-                              --token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4,
-                              rgb(104, 114, 120)
-                            );
-                            border-radius: 10px;
-                            opacity: 1;
-                          "
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="framer-1r2j4zm"
-                  data-framer-name="Line"
-                  style="
-                    background-color: var(
-                      --token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0,
-                      rgb(25, 25, 26)
-                    );
-                    opacity: 1;
-                  "
-                ></div>
-              </div>
-            </div>
-            <div class="framer-hv4qvg" data-framer-name="Light"></div>
-          </div>
-        </section>
-        <section class="framer-qlefgw" data-framer-name="CTA section">
-          <div class="framer-8z62xh-container">
-            <div
-              class="framer-4h35S framer-z6TJW framer-WKM22 framer-1n4p644 framer-v-1n4p644"
-              data-border="true"
-              data-framer-name="Desktop"
-              style="
-                --border-bottom-width: 1px;
-                --border-color: var(
-                  --token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0,
-                  rgb(25, 25, 26)
-                );
-                --border-left-width: 1px;
-                --border-right-width: 1px;
-                --border-style: solid;
-                --border-top-width: 1px;
-                max-width: 100%;
-                width: 100%;
-                will-change: transform;
-                border-radius: 32px;
-                opacity: 0;
-                transform: scale(0.9);
-              "
-            >
-              <div
-                data-framer-background-image-wrapper="true"
-                style="position: absolute; border-radius: inherit; inset: 0px"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  sizes="min(max(100vw - 64px, 1px), 1200px)"
-                  srcset="
-                    https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=2048 2048w,
-                    https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=4096 4096w,
-                    https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp                    5120w
-                  "
-                  src="./Nebula Executor_files/GlzPg2C0jKyCFSf1twdRmUhAQ.webp"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                  "
-                />
-              </div>
-              <div
-                class="framer-10k9jl7"
-                data-framer-name="Heading"
-                style="opacity: 1"
-              >
-                <div
-                  class="framer-shmp0w"
-                  data-framer-component-type="RichTextContainer"
-                  style="
-                    outline: none;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    flex-shrink: 0;
-                    transform: none;
-                    opacity: 1;
-                  "
-                >
-                  <h2
-                    class="framer-text framer-styles-preset-1qqhcei"
-                    data-styles-preset="GUmqEicwe"
-                  >
-                    Ready to use Nebula?
-                  </h2>
-                </div>
-                <div
-                  class="framer-a15mo"
-                  data-framer-component-type="RichTextContainer"
-                  style="
-                    outline: none;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    flex-shrink: 0;
-                    --framer-link-text-color: rgb(0, 153, 255);
-                    --framer-link-text-decoration: underline;
-                    transform: none;
-                    opacity: 1;
-                  "
-                >
-                  <p
-                    class="framer-text framer-styles-preset-pz5li8"
-                    data-styles-preset="KRqmZpwbm"
-                    style="--framer-text-alignment: center"
-                  >
-                    Nebula will release soon.
-                  </p>
-                </div>
-                <div class="framer-14qaaiv-container" style="opacity: 1">
-                  <a
-                    class="framer-4IBFF framer-MGUU9 framer-1hnjk9p framer-v-1hnjk9p framer-cgp00j"
-                    data-framer-name="Variant 1"
-                    style="
-                      background-color: rgba(255, 255, 255, 0.02);
-                      border-radius: 100px;
-                      box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 10px 0px
-                        inset;
-                      opacity: 1;
-                    "
-                    ><div
-                      class="framer-1mjfupf-container"
-                      data-framer-name="Light"
-                      name="Light"
-                      style="opacity: 1"
-                    >
-                      <div style="display: contents">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 256 256"
-                          focusable="false"
-                          color="var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255))"
-                          style="
-                            user-select: none;
-                            width: 100%;
-                            height: 100%;
-                            display: inline-block;
-                            fill: var(
-                              --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                              rgb(255, 255, 255)
-                            );
-                            color: var(
-                              --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                              rgb(255, 255, 255)
-                            );
-                            flex-shrink: 0;
-                          "
-                        >
-                          <g
-                            color="var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255))"
-                            weight="regular"
-                          >
-                            <path
-                              d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z"
-                            ></path>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
-                    <div
-                      class="framer-1jmasc0"
-                      data-framer-component-type="RichTextContainer"
-                      style="
-                        outline: none;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        flex-shrink: 0;
-                        --extracted-r6o4lv: var(
-                          --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                          rgb(255, 255, 255)
-                        );
-                        --framer-link-text-color: rgb(0, 153, 255);
-                        --framer-link-text-decoration: underline;
-                        transform: none;
-                        opacity: 1;
-                      "
-                    >
-                      <p
-                        class="framer-text framer-styles-preset-1dkk44e"
-                        data-styles-preset="v4PWmgpAs"
-                        style="
-                          --framer-text-color: var(
-                            --extracted-r6o4lv,
-                            var(
-                              --token-fb552b7f-a107-45dc-9e34-ef837a53e5c2,
-                              rgb(255, 255, 255)
-                            )
-                          );
-                        "
-                      >
-                        Coming Soon
-                      </p>
-                    </div>
-                    <div
-                      class="framer-1fw0awi"
-                      data-framer-name="Light"
-                      style="
-                        background-color: rgb(234, 168, 121);
-                        filter: blur(10px);
-                        border-radius: 100px;
-                        opacity: 0.2;
-                        transform: translateX(-50%);
-                      "
-                    ></div
-                  ></a>
-                </div>
-              </div>
-              <div
-                class="framer-ww3afo"
-                data-framer-name="Overlay"
-                style="
-                  background-color: var(
-                    --token-7c92defb-aea7-4d14-b6f7-d2c083c349bf,
-                    rgb(11, 11, 13)
-                  );
-                  opacity: 0.6;
-                "
-              ></div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div id="overlay"></div>
-    </div>
-
-            <div
-              class="framer-19yaanm"
-              style="transform: translate(-50%, -50%); opacity: 1"
-            >
-              <div
-                data-framer-component-type="SVG"
-                data-framer-name="madeinframer"
-                class="framer-tmnpxq"
-                aria-hidden="true"
-                style="
-                  image-rendering: pixelated;
-                  flex-shrink: 0;
-                  background-size: 100% 100%;
-                  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2011%2016%22%3E%3Cpath%20d%3D%22M%2011%200%20L%2011%205.333%20L%205.5%205.333%20L%200%200%20Z%20M%200%205.333%20L%205.5%205.333%20L%2011%2010.667%20L%205.5%2010.667%20L%205.5%2016%20L%200%2010.667%20Z%22%20fill%3D%22rgb(34%2C34%2C34)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-                  opacity: 1;
-                "
-              ></div>
-              <div
-                data-framer-component-type="SVG"
-                class="framer-1v3cvgh"
-                role="img"
-                aria-label="Framer - Custom site builder"
-                aria-description="Made in Framer. The professional custom website design builder for startups, designers and agencies."
-                style="
-                  image-rendering: pixelated;
-                  flex-shrink: 0;
-                  background-size: 100% 100%;
-                  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2092%2011%22%3E%3Cpath%20d%3D%22M%200%200.958%20L%202.393%200.958%20L%204.92%207.255%20L%205.028%207.255%20L%207.555%200.958%20L%209.941%200.958%20L%209.941%2010.331%20L%208.066%2010.331%20L%208.066%204.232%20L%207.988%204.232%20L%205.614%2010.286%20L%204.332%2010.286%20L%201.958%204.209%20L%201.882%204.209%20L%201.882%2010.331%20L%200%2010.331%20Z%20M%2013.279%2010.463%20C%2012.874%2010.472%2012.472%2010.392%2012.1%2010.228%20C%2011.769%2010.08%2011.487%209.837%2011.289%209.529%20C%2011.08%209.181%2010.977%208.777%2010.991%208.369%20C%2010.981%208.028%2011.053%207.69%2011.202%207.384%20C%2011.337%207.125%2011.535%206.905%2011.776%206.744%20C%2012.03%206.576%2012.309%206.452%2012.602%206.378%20C%2012.922%206.293%2013.248%206.236%2013.578%206.206%20C%2013.977%206.163%2014.3%206.121%2014.545%206.083%20C%2014.732%206.065%2014.913%206.006%2015.077%205.911%20C%2015.19%205.836%2015.254%205.704%2015.246%205.567%20L%2015.246%205.54%20C%2015.26%205.286%2015.163%205.039%2014.979%204.867%20C%2014.764%204.696%2014.495%204.611%2014.223%204.629%20C%2013.933%204.614%2013.646%204.695%2013.404%204.86%20C%2013.21%205.001%2013.067%205.205%2013%205.438%20L%2011.235%205.292%20C%2011.317%204.882%2011.499%204.5%2011.765%204.182%20C%2012.038%203.859%2012.385%203.611%2012.776%203.459%20C%2013.239%203.282%2013.73%203.196%2014.225%203.206%20C%2014.599%203.206%2014.971%203.254%2015.333%203.349%20C%2015.668%203.433%2015.984%203.577%2016.268%203.776%20C%2016.54%203.964%2016.763%204.218%2016.917%204.514%20C%2017.083%204.846%2017.165%205.214%2017.156%205.586%20L%2017.156%2010.331%20L%2015.345%2010.331%20L%2015.345%209.357%20L%2015.291%209.357%20C%2015.181%209.577%2015.031%209.773%2014.848%209.935%20C%2014.65%2010.108%2014.421%2010.241%2014.174%2010.324%20C%2013.886%2010.421%2013.583%2010.468%2013.279%2010.463%20Z%20M%2013.827%209.119%20C%2014.085%209.124%2014.34%209.065%2014.57%208.947%20C%2014.776%208.841%2014.951%208.681%2015.076%208.482%20C%2015.199%208.286%2015.263%208.057%2015.261%207.823%20L%2015.261%207.073%20C%2015.184%207.12%2015.102%207.156%2015.017%207.181%20C%2014.914%207.212%2014.798%207.242%2014.669%207.267%20C%2014.541%207.293%2014.412%207.316%2014.284%207.336%20L%2013.935%207.39%20C%2013.733%207.416%2013.535%207.47%2013.347%207.55%20C%2013.194%207.611%2013.06%207.713%2012.958%207.844%20C%2012.862%207.977%2012.814%208.139%2012.819%208.303%20C%2012.806%208.542%2012.913%208.771%2013.102%208.911%20C%2013.317%209.056%2013.57%209.129%2013.827%209.119%20Z%20M%2020.986%2010.446%20C%2020.484%2010.453%2019.991%2010.308%2019.568%2010.031%20C%2019.122%209.733%2018.771%209.308%2018.557%208.809%20C%2018.297%208.183%2018.175%207.505%2018.198%206.825%20C%2018.175%206.134%2018.305%205.447%2018.579%204.815%20C%2018.795%204.322%2019.146%203.904%2019.59%203.61%20C%2020.007%203.345%2020.49%203.207%2020.981%203.211%20C%2021.314%203.199%2021.645%203.267%2021.947%203.409%20C%2022.189%203.526%2022.405%203.695%2022.579%203.903%20C%2022.725%204.079%2022.848%204.274%2022.944%204.483%20L%2023.003%204.483%20L%2023.003%200.958%20L%2024.907%200.958%20L%2024.907%2010.331%20L%2023.02%2010.331%20L%2023.02%209.2%20L%2022.939%209.2%20C%2022.84%209.41%2022.713%209.606%2022.562%209.78%20C%2022.385%209.98%2022.17%2010.141%2021.93%2010.253%20C%2021.633%2010.388%2021.311%2010.454%2020.986%2010.446%20Z%20M%2021.591%208.897%20C%2021.873%208.906%2022.149%208.814%2022.373%208.639%20C%2022.599%208.448%2022.769%208.197%2022.865%207.915%20C%2022.985%207.563%2023.042%207.192%2023.034%206.82%20C%2023.043%206.449%2022.985%206.08%2022.865%205.731%20C%2022.771%205.45%2022.6%205.202%2022.373%205.016%20C%2022.147%204.845%2021.871%204.757%2021.59%204.765%20C%2021.303%204.755%2021.023%204.848%2020.796%205.027%20C%2020.57%205.216%2020.401%205.467%2020.307%205.75%20C%2020.191%206.094%2020.134%206.456%2020.139%206.82%20C%2020.132%207.188%2020.189%207.555%2020.307%207.903%20C%2020.4%208.188%2020.569%208.442%2020.794%208.636%20C%2021.022%208.814%2021.304%208.905%2021.591%208.894%20Z%20M%2029.413%2010.469%20C%2028.777%2010.487%2028.148%2010.334%2027.588%2010.026%20C%2027.082%209.738%2026.671%209.302%2026.409%208.773%20C%2026.121%208.176%2025.979%207.515%2025.996%206.849%20C%2025.981%206.19%2026.123%205.536%2026.409%204.944%20C%2026.669%204.414%2027.073%203.971%2027.571%203.667%20C%2028.107%203.353%2028.717%203.195%2029.334%203.211%20C%2029.767%203.208%2030.197%203.282%2030.604%203.431%20C%2030.99%203.576%2031.342%203.803%2031.636%204.097%20C%2031.941%204.414%2032.176%204.794%2032.323%205.213%20C%2032.496%205.716%2032.579%206.247%2032.569%206.78%20L%2032.569%207.316%20L%2026.761%207.316%20L%2026.761%206.102%20L%2030.776%206.102%20C%2030.781%205.842%2030.719%205.584%2030.596%205.355%20C%2030.48%205.141%2030.31%204.962%2030.102%204.839%20C%2029.878%204.712%2029.625%204.648%2029.369%204.653%20C%2029.1%204.648%2028.834%204.719%2028.601%204.858%20C%2028.383%204.989%2028.202%205.177%2028.079%205.402%20C%2027.952%205.633%2027.885%205.894%2027.885%206.159%20L%2027.885%207.309%20C%2027.877%207.62%2027.942%207.929%2028.075%208.209%20C%2028.195%208.454%2028.383%208.658%2028.616%208.796%20C%2028.87%208.938%2029.156%209.009%2029.445%209%20C%2029.643%209.003%2029.84%208.972%2030.028%208.909%20C%2030.197%208.853%2030.351%208.76%2030.48%208.636%20C%2030.607%208.51%2030.705%208.357%2030.766%208.186%20L%2032.532%208.305%20C%2032.449%208.725%2032.261%209.116%2031.984%209.438%20C%2031.692%209.772%2031.326%2010.03%2030.916%2010.19%20C%2030.437%2010.38%2029.927%2010.474%2029.413%2010.469%20Z%20M%2037.324%202.395%20C%2037.053%202.401%2036.791%202.296%2036.596%202.104%20C%2036.404%201.929%2036.295%201.679%2036.295%201.416%20C%2036.295%201.153%2036.404%200.903%2036.596%200.728%20C%2037.007%200.34%2037.641%200.34%2038.052%200.728%20C%2038.245%200.902%2038.355%201.153%2038.355%201.416%20C%2038.358%201.682%2038.247%201.937%2038.052%202.113%20C%2037.856%202.303%2037.594%202.404%2037.324%202.395%20Z%20M%2036.365%2010.331%20L%2036.365%203.302%20L%2038.274%203.302%20L%2038.274%2010.331%20Z%20M%2041.516%206.274%20L%2041.516%2010.331%20L%2039.609%2010.331%20L%2039.609%203.302%20L%2041.427%203.302%20L%2041.427%204.541%20L%2041.508%204.541%20C%2041.655%204.142%2041.923%203.801%2042.275%203.569%20C%2042.665%203.321%2043.119%203.197%2043.579%203.211%20C%2044.016%203.2%2044.448%203.311%2044.829%203.531%20C%2045.186%203.747%2045.474%204.064%2045.658%204.443%20C%2045.864%204.883%2045.965%205.367%2045.953%205.855%20L%2045.953%2010.329%20L%2044.045%2010.329%20L%2044.045%206.199%20C%2044.068%205.832%2043.952%205.47%2043.722%205.189%20C%2043.487%204.939%2043.158%204.807%2042.82%204.825%20C%2042.585%204.822%2042.353%204.882%2042.146%204.997%20C%2041.949%205.111%2041.79%205.283%2041.688%205.49%20C%2041.572%205.734%2041.513%206.003%2041.516%206.274%20Z%20M%2050.044%2010.331%20L%2050.044%200.958%20L%2056.11%200.958%20L%2056.11%202.592%20L%2051.978%202.592%20L%2051.978%204.829%20L%2055.711%204.829%20L%2055.711%206.462%20L%2051.978%206.462%20L%2051.978%2010.334%20Z%20M%2057.077%2010.331%20L%2057.077%203.302%20L%2058.931%203.302%20L%2058.931%204.528%20L%2059.001%204.528%20C%2059.099%204.136%2059.321%203.788%2059.633%203.538%20C%2059.927%203.311%2060.287%203.19%2060.656%203.194%20C%2060.759%203.195%2060.862%203.201%2060.964%203.213%20C%2061.062%203.223%2061.16%203.24%2061.256%203.263%20L%2061.256%204.999%20C%2061.134%204.965%2061.009%204.941%2060.883%204.927%20C%2060.739%204.906%2060.594%204.895%2060.449%204.894%20C%2060.187%204.889%2059.929%204.953%2059.699%205.08%20C%2059.482%205.2%2059.302%205.379%2059.178%205.596%20C%2059.049%205.827%2058.983%206.089%2058.988%206.355%20L%2058.988%2010.331%20Z%20M%2063.814%2010.463%20C%2063.408%2010.472%2063.006%2010.392%2062.634%2010.228%20C%2062.302%2010.081%2062.019%209.838%2061.82%209.529%20C%2061.611%209.181%2061.507%208.777%2061.522%208.369%20C%2061.512%208.028%2061.584%207.69%2061.733%207.384%20C%2061.868%207.125%2062.066%206.905%2062.307%206.744%20C%2062.561%206.576%2062.84%206.452%2063.133%206.378%20C%2063.453%206.294%2063.779%206.236%2064.108%206.206%20C%2064.508%206.163%2064.831%206.121%2065.076%206.083%20C%2065.263%206.064%2065.445%206.006%2065.61%205.911%20C%2065.722%205.836%2065.787%205.704%2065.778%205.567%20L%2065.778%205.54%20C%2065.794%205.286%2065.696%205.038%2065.512%204.867%20C%2065.298%204.696%2065.03%204.611%2064.759%204.629%20C%2064.468%204.613%2064.18%204.694%2063.938%204.86%20C%2063.744%205.001%2063.601%205.204%2063.534%205.438%20L%2061.77%205.292%20C%2061.851%204.882%2062.032%204.5%2062.297%204.182%20C%2062.574%203.859%2062.925%203.611%2063.318%203.459%20C%2063.781%203.282%2064.273%203.196%2064.767%203.206%20C%2065.138%203.204%2065.508%203.25%2065.868%203.342%20C%2066.202%203.426%2066.519%203.571%2066.804%203.769%20C%2067.075%203.958%2067.297%204.211%2067.452%204.507%20C%2067.617%204.84%2067.698%205.211%2067.687%205.584%20L%2067.687%2010.331%20L%2065.883%2010.331%20L%2065.883%209.357%20L%2065.829%209.357%20C%2065.717%209.578%2065.563%209.774%2065.377%209.935%20C%2065.18%2010.108%2064.951%2010.241%2064.703%2010.324%20C%2064.416%2010.42%2064.116%2010.467%2063.814%2010.463%20Z%20M%2064.366%209.119%20C%2064.624%209.124%2064.879%209.065%2065.109%208.947%20C%2065.316%208.841%2065.49%208.681%2065.615%208.482%20C%2065.736%208.285%2065.799%208.056%2065.795%207.823%20L%2065.795%207.073%20C%2065.719%207.12%2065.637%207.156%2065.551%207.181%20C%2065.446%207.212%2065.332%207.242%2065.204%207.267%20C%2065.076%207.293%2064.946%207.316%2064.818%207.336%20L%2064.467%207.39%20C%2064.266%207.417%2064.069%207.47%2063.881%207.55%20C%2063.728%207.611%2063.594%207.712%2063.492%207.844%20C%2063.396%207.977%2063.347%208.139%2063.352%208.303%20C%2063.339%208.542%2063.446%208.772%2063.637%208.911%20C%2063.852%209.058%2064.108%209.13%2064.366%209.119%20Z%20M%2068.985%2010.331%20L%2068.985%203.302%20L%2070.803%203.302%20L%2070.803%204.541%20L%2070.884%204.541%20C%2071.015%204.147%2071.266%203.805%2071.602%203.567%20C%2072.336%203.091%2073.273%203.091%2074.008%203.567%20C%2074.335%203.801%2074.57%204.145%2074.672%204.54%20L%2074.742%204.54%20C%2074.882%204.138%2075.151%203.797%2075.506%203.572%20C%2075.898%203.323%2076.354%203.197%2076.817%203.209%20C%2077.401%203.186%2077.968%203.412%2078.384%203.832%20C%2078.785%204.25%2078.985%204.84%2078.985%205.602%20L%2078.985%2010.331%20L%2077.081%2010.331%20L%2077.081%205.989%20C%2077.106%205.665%2076.995%205.345%2076.776%205.109%20C%2076.57%204.913%2076.296%204.808%2076.015%204.817%20C%2075.709%204.799%2075.412%204.922%2075.204%205.152%20C%2075.001%205.4%2074.897%205.716%2074.913%206.039%20L%2074.913%2010.331%20L%2073.059%2010.331%20L%2073.059%205.947%20C%2073.075%205.644%2072.971%205.347%2072.771%205.123%20C%2072.571%204.916%2072.295%204.805%2072.011%204.817%20C%2071.81%204.813%2071.612%204.87%2071.442%204.979%20C%2071.269%205.09%2071.13%205.247%2071.039%205.433%20C%2070.935%205.647%2070.884%205.883%2070.891%206.121%20L%2070.891%2010.331%20Z%20M%2083.439%2010.469%20C%2082.802%2010.487%2082.173%2010.334%2081.612%2010.026%20C%2081.106%209.737%2080.695%209.301%2080.433%208.773%20C%2080.146%208.175%2080.005%207.515%2080.021%206.849%20C%2080.007%206.19%2080.148%205.536%2080.433%204.944%20C%2080.693%204.414%2081.097%203.971%2081.595%203.667%20C%2082.131%203.353%2082.742%203.196%2083.359%203.211%20C%2083.792%203.208%2084.222%203.282%2084.63%203.431%20C%2085.016%203.576%2085.368%203.803%2085.661%204.097%20C%2085.967%204.413%2086.201%204.794%2086.347%205.213%20C%2086.521%205.716%2086.605%206.247%2086.595%206.78%20L%2086.595%207.316%20L%2080.786%207.316%20L%2080.786%206.102%20L%2084.802%206.102%20C%2084.806%205.842%2084.744%205.584%2084.621%205.355%20C%2084.506%205.14%2084.334%204.962%2084.126%204.839%20C%2083.902%204.712%2083.649%204.647%2083.393%204.653%20C%2083.124%204.648%2082.859%204.719%2082.626%204.858%20C%2082.408%204.988%2082.227%205.176%2082.104%205.402%20C%2081.977%205.633%2081.91%205.894%2081.91%206.159%20L%2081.91%207.309%20C%2081.903%207.62%2081.968%207.929%2082.101%208.209%20C%2082.22%208.455%2082.409%208.659%2082.642%208.796%20C%2082.895%208.938%2083.181%209.009%2083.471%209%20C%2083.668%209.003%2083.865%208.973%2084.052%208.909%20C%2084.221%208.853%2084.376%208.76%2084.505%208.636%20C%2084.633%208.51%2084.73%208.356%2084.792%208.186%20L%2086.558%208.305%20C%2086.474%208.725%2086.285%209.116%2086.008%209.438%20C%2085.716%209.772%2085.351%2010.029%2084.942%2010.19%20C%2084.463%2010.38%2083.952%2010.474%2083.439%2010.469%20Z%20M%2087.654%2010.331%20L%2087.654%203.302%20L%2089.508%203.302%20L%2089.508%204.528%20L%2089.58%204.528%20C%2089.677%204.136%2089.899%203.787%2090.211%203.538%20C%2090.505%203.311%2090.865%203.19%2091.233%203.194%20C%2091.336%203.195%2091.439%203.201%2091.542%203.213%20C%2091.64%203.223%2091.737%203.24%2091.833%203.263%20L%2091.833%204.999%20C%2091.711%204.965%2091.587%204.941%2091.461%204.927%20C%2091.317%204.906%2091.173%204.895%2091.028%204.894%20C%2090.766%204.889%2090.507%204.953%2090.276%205.08%20C%2090.06%205.201%2089.88%205.379%2089.756%205.596%20C%2089.626%205.827%2089.56%206.089%2089.565%206.355%20L%2089.565%2010.331%20Z%22%20fill%3D%22rgb(35%2C31%2C32)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-                  opacity: 1;
-                "
-              ></div>
-            </div></div
-        ></a>
-      </div>
-    </div>
+    <div id="main"><style data-framer-html-style="">html body { background: var(--token-7c92defb-aea7-4d14-b6f7-d2c083c349bf, rgb(11, 11, 13)); }</style><div data-framer-root="" class="framer-ELfEG framer-LugQl framer-WKM22 framer-z6TJW framer-72rtr7" style="min-height: 100vh; width: auto;"><section class="framer-a9zdix" data-framer-name="Hero section" id="hero"><div data-framer-background-image-wrapper="true" style="position: absolute; border-radius: inherit; inset: 0px;"><img decoding="async" src="./Nebula Executor_files/HG3qeAUg4hBOuySKFRcvI8r4g.gif" alt="" style="display: block; width: 100%; height: 100%; border-radius: inherit; object-position: center center; object-fit: cover;"></div><div class="framer-vqu470" data-framer-name="Container"><div class="framer-67b80l" data-framer-name="Content"><div class="framer-16cs22z" data-framer-appear-id="16cs22z" data-framer-name="Heading" style="opacity: 1; will-change: transform; transform: none;"><div class="framer-1dd1e4n" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 0px; opacity: 1; will-change: transform;"><h1 class="framer-text framer-styles-preset-cuixv9" data-styles-preset="NqE6zDPgU" style="--framer-text-alignment: center; --framer-text-color: rgb(255, 255, 255);"><span data-text-fill="true" class="framer-text" style="background-image: linear-gradient(270deg, rgb(146, 127, 228) 0%, rgb(253, 187, 114) 100%);">Nebula Executor</span></h1></div><div class="framer-fdb0rm" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;"><p class="framer-text framer-styles-preset-pz5li8" data-styles-preset="KRqmZpwbm" style="--framer-text-alignment: center;">With flawless performance and looks.</p></div></div></div></div></section><section class="framer-1cgfs1d" data-framer-name="Features section" id="features"><div class="framer-k4rg9k" data-framer-name="Container"><div class="framer-1bu7oxl" data-framer-name="Heading" style="will-change: transform; opacity: 1; transform: none;"><div class="framer-18585uf" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;"><h2 class="framer-text framer-styles-preset-1qqhcei" data-styles-preset="GUmqEicwe">Download today, and experience the top performance of Nebula.</h2></div><div class="framer-18pcfok" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;"><p class="framer-text framer-styles-preset-pz5li8" data-styles-preset="KRqmZpwbm" style="--framer-text-alignment: center;">Coming Soon.</p></div></div><div class="framer-1svd3yv" data-framer-name="Features list"><div class="framer-16r7dva" data-framer-name="Wrapper"><div class="framer-175gwrb hidden-j3ifol" data-framer-name="Divider"></div><div class="framer-14hhuwd hidden-j3ifol" data-framer-name="Divider"></div></div><div class="framer-1l9uenn" data-framer-name="Divider"></div><div class="framer-1aq683q" data-framer-name="Wrapper"><div class="framer-dfufwl-container" style="will-change: transform; opacity: 1; transform: none;"><div class="framer-nDKsd framer-CkWfB framer-MGUU9 framer-1u5ux0a framer-v-1u5ux0a" data-framer-name="Desktop" style="width: 100%; opacity: 1;"><div class="framer-mneos8-container" style="opacity: 1;"><div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121)); color: var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121)); flex-shrink: 0;"><g color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))" weight="regular"><path d="M207,50.25A87.46,87.46,0,0,0,144.6,24h-.33A87.48,87.48,0,0,0,82,49.81L20.61,112a16,16,0,0,0,.06,22.56l28.66,28.66a15.92,15.92,0,0,0,11.32,4.69h.09a16,16,0,0,0,11.36-4.82L133,100.69a16.08,16.08,0,0,1,22.41-.21,15.6,15.6,0,0,1,4.73,11.19,16.89,16.89,0,0,1-4.85,12L93,183.88a16,16,0,0,0-.17,22.79l28.66,28.66a16.06,16.06,0,0,0,22.52.12L205.81,175C240.26,140.5,240.79,84.56,207,50.25ZM60.65,151.89,32,123.24,55.8,99.12l28.52,28.52ZM132.79,224l-28.68-28.65,24.38-23.57L157,200.32Zm61.76-60.44-26.11,25.54L140,160.68l26.44-25.57.1-.09a33,33,0,0,0,9.57-23.5A31.44,31.44,0,0,0,166.47,89a32.2,32.2,0,0,0-44.9.5L95.49,116.18,67,87.74,93.35,61.09A71.51,71.51,0,0,1,144.27,40h.27a71.55,71.55,0,0,1,51.05,21.48C223.25,89.55,222.75,135.38,194.55,163.58Z"></path></g></svg></div></div><div class="framer-1ab69f9" data-framer-appear-id="1ab69f9" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-1w1cjl5: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; will-change: transform; opacity: 1; transform: none;"><h6 class="framer-text framer-styles-preset-bhpk9h" data-styles-preset="Y1UR2y0W_" style="--framer-text-color: var(--extracted-1w1cjl5, var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)));">High UNC and sUNC</h6></div><div class="framer-1ywzvt3" data-framer-appear-id="1ywzvt3" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; will-change: transform; opacity: 1; transform: none;"><p class="framer-text framer-styles-preset-1dkk44e" data-styles-preset="v4PWmgpAs">Nebula can execute almost all scripts thanks to it's high UNC and sUNC.</p></div></div></div><div class="framer-82vpt5 hidden-j3ifol" data-framer-name="Divider"></div><div class="framer-1wq7kx3 hidden-j3ifol" data-framer-name="Divider"></div><div class="framer-x3dznm-container" style="will-change: transform; opacity: 1; transform: none;"><div class="framer-nDKsd framer-CkWfB framer-MGUU9 framer-1u5ux0a framer-v-1u5ux0a" data-framer-name="Desktop" style="width: 100%; opacity: 1;"><div class="framer-mneos8-container" style="opacity: 1;"><div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121)); color: var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121)); flex-shrink: 0;"><g color="var(--token-ff1475bf-ed84-4f1a-8ac4-a73aae2dbbed, rgb(234, 168, 121))" weight="regular"><path d="M216,48H40A16,16,0,0,0,24,64V224a15.84,15.84,0,0,0,9.25,14.5A16.05,16.05,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78l.09-.07L83,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H80a8,8,0,0,0-5.23,1.95L40,224V64H216Z"></path></g></svg></div></div><div class="framer-1ab69f9" data-framer-appear-id="1ab69f9" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-1w1cjl5: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; will-change: transform; opacity: 1; transform: none;"><h6 class="framer-text framer-styles-preset-bhpk9h" data-styles-preset="Y1UR2y0W_" style="--framer-text-color: var(--extracted-1w1cjl5, var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)));">Trusted Owners</h6></div><div class="framer-1ywzvt3" data-framer-appear-id="1ywzvt3" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; will-change: transform; opacity: 1; transform: none;"><p class="framer-text framer-styles-preset-1dkk44e" data-styles-preset="v4PWmgpAs">Nebula Executor has trusted owners so you never have to worry about getting ratted.</p></div></div></div></div></div></div></section><section class="framer-5lbap2" data-framer-name="FAQ section"><div class="framer-sdjymb" data-framer-name="Container"><div class="framer-454o4g" data-framer-name="Heading" style="will-change: transform; opacity: 1; transform: none;"><div class="framer-k00t03" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none;"><h2 class="framer-text framer-styles-preset-1qqhcei" data-styles-preset="GUmqEicwe">Frequently Asked Questions</h2></div></div><div class="framer-r78s2t-container" style="will-change: transform; opacity: 1; transform: none;"><div class="framer-FZX1b framer-1nrwaz2 framer-v-1nrwaz2" data-border="true" data-framer-name="Default" style="--border-bottom-width: 1px; --border-color: var(--token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0, rgb(48, 50, 54)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; backdrop-filter: blur(30px); background-color: rgba(11, 11, 13, 0.8); max-width: 100%; width: 100%; border-radius: 20px; opacity: 1;"><div class="framer-1n55ecy-container" style="opacity: 1;"><div class="framer-QSVrz framer-WKM22 framer-MGUU9 framer-1i7si7 framer-v-1i7si7" data-framer-name="Closed" style="width: 100%; opacity: 1;"><div class="framer-elvhaj" data-framer-name="Question" data-highlight="true" tabindex="0" style="opacity: 1;"><div class="framer-ks05xd" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-pz5li8" data-styles-preset="KRqmZpwbm" style="--framer-text-color: var(--extracted-r6o4lv, var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)));">Is Nebula Executor safe to use?</p></div><div class="framer-1vrff1v" data-framer-name="Plus" style="opacity: 0.3; transform: none;"><div class="framer-1w0s6qg" style="background-color: var(--token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4, rgb(104, 114, 120)); border-radius: 10px; opacity: 1;"></div><div class="framer-7746uy" style="background-color: var(--token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4, rgb(104, 114, 120)); border-radius: 10px; opacity: 1;"></div></div></div></div></div><div class="framer-18k7mc8" data-framer-name="Line" style="background-color: var(--token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0, rgb(25, 25, 26)); opacity: 1;"></div><div class="framer-89rdci-container" style="opacity: 1;"><div class="framer-QSVrz framer-WKM22 framer-MGUU9 framer-1i7si7 framer-v-1i7si7" data-framer-name="Closed" style="width: 100%; opacity: 1;"><div class="framer-elvhaj" data-framer-name="Question" data-highlight="true" tabindex="0" style="opacity: 1;"><div class="framer-ks05xd" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-pz5li8" data-styles-preset="KRqmZpwbm" style="--framer-text-color: var(--extracted-r6o4lv, var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)));">Can it execute scripts well?</p></div><div class="framer-1vrff1v" data-framer-name="Plus" style="opacity: 0.3; transform: none;"><div class="framer-1w0s6qg" style="background-color: var(--token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4, rgb(104, 114, 120)); border-radius: 10px; opacity: 1;"></div><div class="framer-7746uy" style="background-color: var(--token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4, rgb(104, 114, 120)); border-radius: 10px; opacity: 1;"></div></div></div></div></div><div class="framer-4rq9z6" data-framer-name="Line" style="background-color: var(--token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0, rgb(25, 25, 26)); opacity: 1;"></div><div class="framer-1sgoni2-container" style="opacity: 1;"><div class="framer-QSVrz framer-WKM22 framer-MGUU9 framer-1i7si7 framer-v-1i7si7" data-framer-name="Closed" style="width: 100%; opacity: 1;"><div class="framer-elvhaj" data-framer-name="Question" data-highlight="true" tabindex="0" style="opacity: 1;"><div class="framer-ks05xd" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-pz5li8" data-styles-preset="KRqmZpwbm" style="--framer-text-color: var(--extracted-r6o4lv, var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)));">Where can I report bugs and issues?</p></div><div class="framer-1vrff1v" data-framer-name="Plus" style="opacity: 0.3; transform: none;"><div class="framer-1w0s6qg" style="background-color: var(--token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4, rgb(104, 114, 120)); border-radius: 10px; opacity: 1;"></div><div class="framer-7746uy" style="background-color: var(--token-9dcac85b-60ee-43cc-aaf3-cfe15b6859f4, rgb(104, 114, 120)); border-radius: 10px; opacity: 1;"></div></div></div></div></div><div class="framer-1r2j4zm" data-framer-name="Line" style="background-color: var(--token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0, rgb(25, 25, 26)); opacity: 1;"></div></div></div><div class="framer-hv4qvg" data-framer-name="Light"></div></div></section><section class="framer-qlefgw" data-framer-name="CTA section"><div class="framer-8z62xh-container"><div class="framer-4h35S framer-z6TJW framer-WKM22 framer-1n4p644 framer-v-1n4p644" data-border="true" data-framer-name="Desktop" style="--border-bottom-width: 1px; --border-color: var(--token-7d1f337e-d1f3-467b-a83b-01c4a2ca74e0, rgb(25, 25, 26)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; max-width: 100%; width: 100%; will-change: transform; border-radius: 32px; opacity: 0; transform: scale(0.9);"><div data-framer-background-image-wrapper="true" style="position: absolute; border-radius: inherit; inset: 0px;"><img decoding="async" loading="lazy" sizes="min(max(100vw - 64px, 1px), 1200px)" srcset="https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=512 512w,https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=1024 1024w,https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=2048 2048w,https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp?scale-down-to=4096 4096w,https://framerusercontent.com/images/GlzPg2C0jKyCFSf1twdRmUhAQ.webp 5120w" src="./Nebula Executor_files/GlzPg2C0jKyCFSf1twdRmUhAQ.webp" alt="" style="display: block; width: 100%; height: 100%; border-radius: inherit; object-position: center center; object-fit: cover;"></div><div class="framer-10k9jl7" data-framer-name="Heading" style="opacity: 1;"><div class="framer-shmp0w" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; transform: none; opacity: 1;"><h2 class="framer-text framer-styles-preset-1qqhcei" data-styles-preset="GUmqEicwe">Ready to use Nebula?</h2></div><div class="framer-a15mo" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-pz5li8" data-styles-preset="KRqmZpwbm" style="--framer-text-alignment: center;">Nebula will release soon.</p></div><div class="framer-14qaaiv-container" style="opacity: 1;"><a class="framer-4IBFF framer-MGUU9 framer-1hnjk9p framer-v-1hnjk9p framer-cgp00j" data-framer-name="Variant 1" style="background-color: rgba(255, 255, 255, 0.02); border-radius: 100px; box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 10px 0px inset; opacity: 1;"><div class="framer-1mjfupf-container" data-framer-name="Light" name="Light" style="opacity: 1;"><div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); color: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); flex-shrink: 0;"><g color="var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255))" weight="regular"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z"></path></g></svg></div></div><div class="framer-1jmasc0" data-framer-component-type="RichTextContainer" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-1dkk44e" data-styles-preset="v4PWmgpAs" style="--framer-text-color: var(--extracted-r6o4lv, var(--token-fb552b7f-a107-45dc-9e34-ef837a53e5c2, rgb(255, 255, 255)));">Coming Soon</p></div><div class="framer-1fw0awi" data-framer-name="Light" style="background-color: rgb(234, 168, 121); filter: blur(10px); border-radius: 100px; opacity: 0.2; transform: translateX(-50%);"></div></a></div></div><div class="framer-ww3afo" data-framer-name="Overlay" style="background-color: var(--token-7c92defb-aea7-4d14-b6f7-d2c083c349bf, rgb(11, 11, 13)); opacity: 0.6;"></div></div></div></section></div><div id="overlay"></div></div>
+    
+    
+href="https://www.framer.com/" title="Framer - Custom website builder for designers, agencies and startups."><div class="framer-TLVk2 framer-n0ccwk framer-v-n0ccwk" data-framer-name="Light" tabindex="0" style="--border-bottom-width: 0px; --border-color: rgba(0, 0, 0, 0); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 0px; background-color: rgb(255, 255, 255); border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.26) 0px 0.636953px 1.14652px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.9316px 3.47689px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10612px 9.19102px -3.375px, rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px; cursor: pointer; opacity: 1;"><div class="framer-19yaanm" style="transform: translate(-50%, -50%); opacity: 1;"><div data-framer-component-type="SVG" data-framer-name="madeinframer" class="framer-tmnpxq" aria-hidden="true" style="image-rendering: pixelated; flex-shrink: 0; background-size: 100% 100%; background-image: url(&quot;data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2011%2016%22%3E%3Cpath%20d%3D%22M%2011%200%20L%2011%205.333%20L%205.5%205.333%20L%200%200%20Z%20M%200%205.333%20L%205.5%205.333%20L%2011%2010.667%20L%205.5%2010.667%20L%205.5%2016%20L%200%2010.667%20Z%22%20fill%3D%22rgb(34%2C34%2C34)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E&quot;); opacity: 1;"></div><div data-framer-component-type="SVG" class="framer-1v3cvgh" role="img" aria-label="Framer - Custom site builder" aria-description="Made in Framer. The professional custom website design builder for startups, designers and agencies." style="image-rendering: pixelated; flex-shrink: 0; background-size: 100% 100%; background-image: url(&quot;data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2092%2011%22%3E%3Cpath%20d%3D%22M%200%200.958%20L%202.393%200.958%20L%204.92%207.255%20L%205.028%207.255%20L%207.555%200.958%20L%209.941%200.958%20L%209.941%2010.331%20L%208.066%2010.331%20L%208.066%204.232%20L%207.988%204.232%20L%205.614%2010.286%20L%204.332%2010.286%20L%201.958%204.209%20L%201.882%204.209%20L%201.882%2010.331%20L%200%2010.331%20Z%20M%2013.279%2010.463%20C%2012.874%2010.472%2012.472%2010.392%2012.1%2010.228%20C%2011.769%2010.08%2011.487%209.837%2011.289%209.529%20C%2011.08%209.181%2010.977%208.777%2010.991%208.369%20C%2010.981%208.028%2011.053%207.69%2011.202%207.384%20C%2011.337%207.125%2011.535%206.905%2011.776%206.744%20C%2012.03%206.576%2012.309%206.452%2012.602%206.378%20C%2012.922%206.293%2013.248%206.236%2013.578%206.206%20C%2013.977%206.163%2014.3%206.121%2014.545%206.083%20C%2014.732%206.065%2014.913%206.006%2015.077%205.911%20C%2015.19%205.836%2015.254%205.704%2015.246%205.567%20L%2015.246%205.54%20C%2015.26%205.286%2015.163%205.039%2014.979%204.867%20C%2014.764%204.696%2014.495%204.611%2014.223%204.629%20C%2013.933%204.614%2013.646%204.695%2013.404%204.86%20C%2013.21%205.001%2013.067%205.205%2013%205.438%20L%2011.235%205.292%20C%2011.317%204.882%2011.499%204.5%2011.765%204.182%20C%2012.038%203.859%2012.385%203.611%2012.776%203.459%20C%2013.239%203.282%2013.73%203.196%2014.225%203.206%20C%2014.599%203.206%2014.971%203.254%2015.333%203.349%20C%2015.668%203.433%2015.984%203.577%2016.268%203.776%20C%2016.54%203.964%2016.763%204.218%2016.917%204.514%20C%2017.083%204.846%2017.165%205.214%2017.156%205.586%20L%2017.156%2010.331%20L%2015.345%2010.331%20L%2015.345%209.357%20L%2015.291%209.357%20C%2015.181%209.577%2015.031%209.773%2014.848%209.935%20C%2014.65%2010.108%2014.421%2010.241%2014.174%2010.324%20C%2013.886%2010.421%2013.583%2010.468%2013.279%2010.463%20Z%20M%2013.827%209.119%20C%2014.085%209.124%2014.34%209.065%2014.57%208.947%20C%2014.776%208.841%2014.951%208.681%2015.076%208.482%20C%2015.199%208.286%2015.263%208.057%2015.261%207.823%20L%2015.261%207.073%20C%2015.184%207.12%2015.102%207.156%2015.017%207.181%20C%2014.914%207.212%2014.798%207.242%2014.669%207.267%20C%2014.541%207.293%2014.412%207.316%2014.284%207.336%20L%2013.935%207.39%20C%2013.733%207.416%2013.535%207.47%2013.347%207.55%20C%2013.194%207.611%2013.06%207.713%2012.958%207.844%20C%2012.862%207.977%2012.814%208.139%2012.819%208.303%20C%2012.806%208.542%2012.913%208.771%2013.102%208.911%20C%2013.317%209.056%2013.57%209.129%2013.827%209.119%20Z%20M%2020.986%2010.446%20C%2020.484%2010.453%2019.991%2010.308%2019.568%2010.031%20C%2019.122%209.733%2018.771%209.308%2018.557%208.809%20C%2018.297%208.183%2018.175%207.505%2018.198%206.825%20C%2018.175%206.134%2018.305%205.447%2018.579%204.815%20C%2018.795%204.322%2019.146%203.904%2019.59%203.61%20C%2020.007%203.345%2020.49%203.207%2020.981%203.211%20C%2021.314%203.199%2021.645%203.267%2021.947%203.409%20C%2022.189%203.526%2022.405%203.695%2022.579%203.903%20C%2022.725%204.079%2022.848%204.274%2022.944%204.483%20L%2023.003%204.483%20L%2023.003%200.958%20L%2024.907%200.958%20L%2024.907%2010.331%20L%2023.02%2010.331%20L%2023.02%209.2%20L%2022.939%209.2%20C%2022.84%209.41%2022.713%209.606%2022.562%209.78%20C%2022.385%209.98%2022.17%2010.141%2021.93%2010.253%20C%2021.633%2010.388%2021.311%2010.454%2020.986%2010.446%20Z%20M%2021.591%208.897%20C%2021.873%208.906%2022.149%208.814%2022.373%208.639%20C%2022.599%208.448%2022.769%208.197%2022.865%207.915%20C%2022.985%207.563%2023.042%207.192%2023.034%206.82%20C%2023.043%206.449%2022.985%206.08%2022.865%205.731%20C%2022.771%205.45%2022.6%205.202%2022.373%205.016%20C%2022.147%204.845%2021.871%204.757%2021.59%204.765%20C%2021.303%204.755%2021.023%204.848%2020.796%205.027%20C%2020.57%205.216%2020.401%205.467%2020.307%205.75%20C%2020.191%206.094%2020.134%206.456%2020.139%206.82%20C%2020.132%207.188%2020.189%207.555%2020.307%207.903%20C%2020.4%208.188%2020.569%208.442%2020.794%208.636%20C%2021.022%208.814%2021.304%208.905%2021.591%208.894%20Z%20M%2029.413%2010.469%20C%2028.777%2010.487%2028.148%2010.334%2027.588%2010.026%20C%2027.082%209.738%2026.671%209.302%2026.409%208.773%20C%2026.121%208.176%2025.979%207.515%2025.996%206.849%20C%2025.981%206.19%2026.123%205.536%2026.409%204.944%20C%2026.669%204.414%2027.073%203.971%2027.571%203.667%20C%2028.107%203.353%2028.717%203.195%2029.334%203.211%20C%2029.767%203.208%2030.197%203.282%2030.604%203.431%20C%2030.99%203.576%2031.342%203.803%2031.636%204.097%20C%2031.941%204.414%2032.176%204.794%2032.323%205.213%20C%2032.496%205.716%2032.579%206.247%2032.569%206.78%20L%2032.569%207.316%20L%2026.761%207.316%20L%2026.761%206.102%20L%2030.776%206.102%20C%2030.781%205.842%2030.719%205.584%2030.596%205.355%20C%2030.48%205.141%2030.31%204.962%2030.102%204.839%20C%2029.878%204.712%2029.625%204.648%2029.369%204.653%20C%2029.1%204.648%2028.834%204.719%2028.601%204.858%20C%2028.383%204.989%2028.202%205.177%2028.079%205.402%20C%2027.952%205.633%2027.885%205.894%2027.885%206.159%20L%2027.885%207.309%20C%2027.877%207.62%2027.942%207.929%2028.075%208.209%20C%2028.195%208.454%2028.383%208.658%2028.616%208.796%20C%2028.87%208.938%2029.156%209.009%2029.445%209%20C%2029.643%209.003%2029.84%208.972%2030.028%208.909%20C%2030.197%208.853%2030.351%208.76%2030.48%208.636%20C%2030.607%208.51%2030.705%208.357%2030.766%208.186%20L%2032.532%208.305%20C%2032.449%208.725%2032.261%209.116%2031.984%209.438%20C%2031.692%209.772%2031.326%2010.03%2030.916%2010.19%20C%2030.437%2010.38%2029.927%2010.474%2029.413%2010.469%20Z%20M%2037.324%202.395%20C%2037.053%202.401%2036.791%202.296%2036.596%202.104%20C%2036.404%201.929%2036.295%201.679%2036.295%201.416%20C%2036.295%201.153%2036.404%200.903%2036.596%200.728%20C%2037.007%200.34%2037.641%200.34%2038.052%200.728%20C%2038.245%200.902%2038.355%201.153%2038.355%201.416%20C%2038.358%201.682%2038.247%201.937%2038.052%202.113%20C%2037.856%202.303%2037.594%202.404%2037.324%202.395%20Z%20M%2036.365%2010.331%20L%2036.365%203.302%20L%2038.274%203.302%20L%2038.274%2010.331%20Z%20M%2041.516%206.274%20L%2041.516%2010.331%20L%2039.609%2010.331%20L%2039.609%203.302%20L%2041.427%203.302%20L%2041.427%204.541%20L%2041.508%204.541%20C%2041.655%204.142%2041.923%203.801%2042.275%203.569%20C%2042.665%203.321%2043.119%203.197%2043.579%203.211%20C%2044.016%203.2%2044.448%203.311%2044.829%203.531%20C%2045.186%203.747%2045.474%204.064%2045.658%204.443%20C%2045.864%204.883%2045.965%205.367%2045.953%205.855%20L%2045.953%2010.329%20L%2044.045%2010.329%20L%2044.045%206.199%20C%2044.068%205.832%2043.952%205.47%2043.722%205.189%20C%2043.487%204.939%2043.158%204.807%2042.82%204.825%20C%2042.585%204.822%2042.353%204.882%2042.146%204.997%20C%2041.949%205.111%2041.79%205.283%2041.688%205.49%20C%2041.572%205.734%2041.513%206.003%2041.516%206.274%20Z%20M%2050.044%2010.331%20L%2050.044%200.958%20L%2056.11%200.958%20L%2056.11%202.592%20L%2051.978%202.592%20L%2051.978%204.829%20L%2055.711%204.829%20L%2055.711%206.462%20L%2051.978%206.462%20L%2051.978%2010.334%20Z%20M%2057.077%2010.331%20L%2057.077%203.302%20L%2058.931%203.302%20L%2058.931%204.528%20L%2059.001%204.528%20C%2059.099%204.136%2059.321%203.788%2059.633%203.538%20C%2059.927%203.311%2060.287%203.19%2060.656%203.194%20C%2060.759%203.195%2060.862%203.201%2060.964%203.213%20C%2061.062%203.223%2061.16%203.24%2061.256%203.263%20L%2061.256%204.999%20C%2061.134%204.965%2061.009%204.941%2060.883%204.927%20C%2060.739%204.906%2060.594%204.895%2060.449%204.894%20C%2060.187%204.889%2059.929%204.953%2059.699%205.08%20C%2059.482%205.2%2059.302%205.379%2059.178%205.596%20C%2059.049%205.827%2058.983%206.089%2058.988%206.355%20L%2058.988%2010.331%20Z%20M%2063.814%2010.463%20C%2063.408%2010.472%2063.006%2010.392%2062.634%2010.228%20C%2062.302%2010.081%2062.019%209.838%2061.82%209.529%20C%2061.611%209.181%2061.507%208.777%2061.522%208.369%20C%2061.512%208.028%2061.584%207.69%2061.733%207.384%20C%2061.868%207.125%2062.066%206.905%2062.307%206.744%20C%2062.561%206.576%2062.84%206.452%2063.133%206.378%20C%2063.453%206.294%2063.779%206.236%2064.108%206.206%20C%2064.508%206.163%2064.831%206.121%2065.076%206.083%20C%2065.263%206.064%2065.445%206.006%2065.61%205.911%20C%2065.722%205.836%2065.787%205.704%2065.778%205.567%20L%2065.778%205.54%20C%2065.794%205.286%2065.696%205.038%2065.512%204.867%20C%2065.298%204.696%2065.03%204.611%2064.759%204.629%20C%2064.468%204.613%2064.18%204.694%2063.938%204.86%20C%2063.744%205.001%2063.601%205.204%2063.534%205.438%20L%2061.77%205.292%20C%2061.851%204.882%2062.032%204.5%2062.297%204.182%20C%2062.574%203.859%2062.925%203.611%2063.318%203.459%20C%2063.781%203.282%2064.273%203.196%2064.767%203.206%20C%2065.138%203.204%2065.508%203.25%2065.868%203.342%20C%2066.202%203.426%2066.519%203.571%2066.804%203.769%20C%2067.075%203.958%2067.297%204.211%2067.452%204.507%20C%2067.617%204.84%2067.698%205.211%2067.687%205.584%20L%2067.687%2010.331%20L%2065.883%2010.331%20L%2065.883%209.357%20L%2065.829%209.357%20C%2065.717%209.578%2065.563%209.774%2065.377%209.935%20C%2065.18%2010.108%2064.951%2010.241%2064.703%2010.324%20C%2064.416%2010.42%2064.116%2010.467%2063.814%2010.463%20Z%20M%2064.366%209.119%20C%2064.624%209.124%2064.879%209.065%2065.109%208.947%20C%2065.316%208.841%2065.49%208.681%2065.615%208.482%20C%2065.736%208.285%2065.799%208.056%2065.795%207.823%20L%2065.795%207.073%20C%2065.719%207.12%2065.637%207.156%2065.551%207.181%20C%2065.446%207.212%2065.332%207.242%2065.204%207.267%20C%2065.076%207.293%2064.946%207.316%2064.818%207.336%20L%2064.467%207.39%20C%2064.266%207.417%2064.069%207.47%2063.881%207.55%20C%2063.728%207.611%2063.594%207.712%2063.492%207.844%20C%2063.396%207.977%2063.347%208.139%2063.352%208.303%20C%2063.339%208.542%2063.446%208.772%2063.637%208.911%20C%2063.852%209.058%2064.108%209.13%2064.366%209.119%20Z%20M%2068.985%2010.331%20L%2068.985%203.302%20L%2070.803%203.302%20L%2070.803%204.541%20L%2070.884%204.541%20C%2071.015%204.147%2071.266%203.805%2071.602%203.567%20C%2072.336%203.091%2073.273%203.091%2074.008%203.567%20C%2074.335%203.801%2074.57%204.145%2074.672%204.54%20L%2074.742%204.54%20C%2074.882%204.138%2075.151%203.797%2075.506%203.572%20C%2075.898%203.323%2076.354%203.197%2076.817%203.209%20C%2077.401%203.186%2077.968%203.412%2078.384%203.832%20C%2078.785%204.25%2078.985%204.84%2078.985%205.602%20L%2078.985%2010.331%20L%2077.081%2010.331%20L%2077.081%205.989%20C%2077.106%205.665%2076.995%205.345%2076.776%205.109%20C%2076.57%204.913%2076.296%204.808%2076.015%204.817%20C%2075.709%204.799%2075.412%204.922%2075.204%205.152%20C%2075.001%205.4%2074.897%205.716%2074.913%206.039%20L%2074.913%2010.331%20L%2073.059%2010.331%20L%2073.059%205.947%20C%2073.075%205.644%2072.971%205.347%2072.771%205.123%20C%2072.571%204.916%2072.295%204.805%2072.011%204.817%20C%2071.81%204.813%2071.612%204.87%2071.442%204.979%20C%2071.269%205.09%2071.13%205.247%2071.039%205.433%20C%2070.935%205.647%2070.884%205.883%2070.891%206.121%20L%2070.891%2010.331%20Z%20M%2083.439%2010.469%20C%2082.802%2010.487%2082.173%2010.334%2081.612%2010.026%20C%2081.106%209.737%2080.695%209.301%2080.433%208.773%20C%2080.146%208.175%2080.005%207.515%2080.021%206.849%20C%2080.007%206.19%2080.148%205.536%2080.433%204.944%20C%2080.693%204.414%2081.097%203.971%2081.595%203.667%20C%2082.131%203.353%2082.742%203.196%2083.359%203.211%20C%2083.792%203.208%2084.222%203.282%2084.63%203.431%20C%2085.016%203.576%2085.368%203.803%2085.661%204.097%20C%2085.967%204.413%2086.201%204.794%2086.347%205.213%20C%2086.521%205.716%2086.605%206.247%2086.595%206.78%20L%2086.595%207.316%20L%2080.786%207.316%20L%2080.786%206.102%20L%2084.802%206.102%20C%2084.806%205.842%2084.744%205.584%2084.621%205.355%20C%2084.506%205.14%2084.334%204.962%2084.126%204.839%20C%2083.902%204.712%2083.649%204.647%2083.393%204.653%20C%2083.124%204.648%2082.859%204.719%2082.626%204.858%20C%2082.408%204.988%2082.227%205.176%2082.104%205.402%20C%2081.977%205.633%2081.91%205.894%2081.91%206.159%20L%2081.91%207.309%20C%2081.903%207.62%2081.968%207.929%2082.101%208.209%20C%2082.22%208.455%2082.409%208.659%2082.642%208.796%20C%2082.895%208.938%2083.181%209.009%2083.471%209%20C%2083.668%209.003%2083.865%208.973%2084.052%208.909%20C%2084.221%208.853%2084.376%208.76%2084.505%208.636%20C%2084.633%208.51%2084.73%208.356%2084.792%208.186%20L%2086.558%208.305%20C%2086.474%208.725%2086.285%209.116%2086.008%209.438%20C%2085.716%209.772%2085.351%2010.029%2084.942%2010.19%20C%2084.463%2010.38%2083.952%2010.474%2083.439%2010.469%20Z%20M%2087.654%2010.331%20L%2087.654%203.302%20L%2089.508%203.302%20L%2089.508%204.528%20L%2089.58%204.528%20C%2089.677%204.136%2089.899%203.787%2090.211%203.538%20C%2090.505%203.311%2090.865%203.19%2091.233%203.194%20C%2091.336%203.195%2091.439%203.201%2091.542%203.213%20C%2091.64%203.223%2091.737%203.24%2091.833%203.263%20L%2091.833%204.999%20C%2091.711%204.965%2091.587%204.941%2091.461%204.927%20C%2091.317%204.906%2091.173%204.895%2091.028%204.894%20C%2090.766%204.889%2090.507%204.953%2090.276%205.08%20C%2090.06%205.201%2089.88%205.379%2089.756%205.596%20C%2089.626%205.827%2089.56%206.089%2089.565%206.355%20L%2089.565%2010.331%20Z%22%20fill%3D%22rgb(35%2C31%2C32)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E&quot;); opacity: 1;"></div></div></div></a></div></div>
     <script data-framer-appear-animation="no-preference"></script>
     <script type="module" async="" data-framer-bundle="main">
-      import * as Framer from "framer";
-      import * as React from "react";
-      import { createPortal } from "react-dom";
-      import * as ReactDOM from "react-dom/client";
+        import * as Framer from "framer";
+import * as React from "react";
+import { createPortal } from "react-dom";
+import * as ReactDOM from "react-dom/client";
 
-      const routes = {
-        augiA20Il: {
-          elements: { lhMOAnygI: "hero", XGXKMwa32: "features" },
-          page: Framer.lazy(() =>
-            import(
-              "https://framerusercontent.com/modules/uvdpWCepP8fAcMhB8bmT/4PwDNrmIofhwgmbjBHvu/augiA20Il.js"
-            )
-          ),
-          path: "/",
-        },
-        cX2Ymwn5I: {
-          elements: {},
-          page: Framer.lazy(() =>
-            import(
-              "https://framerusercontent.com/modules/79sA0gAau0N6EAkKtzT8/fNPBvyO77jzOuzjmfbmk/cX2Ymwn5I.js"
-            )
-          ),
-          path: "/404",
-        },
-        meNNVlbTJ: {
-          elements: { DgNKBI9kP: "navbar" },
-          page: Framer.lazy(() =>
-            import(
-              "https://framerusercontent.com/modules/xTn7uv4aI4Yc6MyxrxSW/GoBCWjwhvLL9VkUE5u5B/meNNVlbTJ.js"
-            )
-          ),
-          path: "/terms-conditions",
-        },
-        bv_Sdt4qg: {
-          elements: { F0RvFPpii: "navbar" },
-          page: Framer.lazy(() =>
-            import(
-              "https://framerusercontent.com/modules/ypFYLdGFiIoaxH49lYln/NmWOas3yvCvH22zSElON/bv_Sdt4qg.js"
-            )
-          ),
-          path: "/privacy-policy",
-        },
-      };
-      const locales = [
-        { code: "en", id: "default", name: "English", slug: "" },
-        { code: "az-AZ", id: "cjIgMneo9", name: "az", slug: "az-az" },
-      ];
+        const routes = {augiA20Il: {elements: {lhMOAnygI: "hero", XGXKMwa32: "features"}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/uvdpWCepP8fAcMhB8bmT/4PwDNrmIofhwgmbjBHvu/augiA20Il.js")), path: "/"}, cX2Ymwn5I: {elements: {}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/79sA0gAau0N6EAkKtzT8/fNPBvyO77jzOuzjmfbmk/cX2Ymwn5I.js")), path: "/404"}, meNNVlbTJ: {elements: {DgNKBI9kP: "navbar"}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/xTn7uv4aI4Yc6MyxrxSW/GoBCWjwhvLL9VkUE5u5B/meNNVlbTJ.js")), path: "/terms-conditions"}, bv_Sdt4qg: {elements: {F0RvFPpii: "navbar"}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/ypFYLdGFiIoaxH49lYln/NmWOas3yvCvH22zSElON/bv_Sdt4qg.js")), path: "/privacy-policy"}}
+        const locales = [{code: "en", id: "default", name: "English", slug: ""}, {code: "az-AZ", id: "cjIgMneo9", name: "az", slug: "az-az"}]
+        
 
-      export async function getPageRoot({ routeId, pathVariables, localeId }) {
-        // We don't want the initial render to immediately have to suspend.
-        await routes[routeId].page.preload();
+        export async function getPageRoot({ routeId, pathVariables, localeId }) {
+            // We don't want the initial render to immediately have to suspend.
+            await routes[routeId].page.preload()
 
-        const content = React.createElement(Framer.PageRoot, {
-          isWebsite: true,
-          routeId,
-          pathVariables,
-          routes,
-          collectionUtils: {},
-          framerSiteId:
-            "481ea9f912a01fb6641bd3cdb52631f03c6ab7538c3a4ef1ccae3cf8ebb0114b",
-          notFoundPage: Framer.lazy(() =>
-            import(
-              "https://framerusercontent.com/modules/79sA0gAau0N6EAkKtzT8/fNPBvyO77jzOuzjmfbmk/cX2Ymwn5I.js"
-            )
-          ),
-          isReducedMotion: undefined,
-          localeId,
-          locales,
-          preserveQueryParams: undefined,
-          EditorBar:
-            typeof window === "undefined"
-              ? undefined
-              : Framer.lazy(async () => {
-                  const { createEditorBar } = await import(
-                    "https://edit.framer.com/init.mjs"
-                  );
-                  return {
-                    default: createEditorBar({
-                      dependencies: {
+            const content = React.createElement(
+                Framer.PageRoot,
+                {
+                    isWebsite: true,
+                    routeId,
+                    pathVariables,
+                    routes,
+                    collectionUtils: {},
+                    framerSiteId: "481ea9f912a01fb6641bd3cdb52631f03c6ab7538c3a4ef1ccae3cf8ebb0114b",
+                    notFoundPage: Framer.lazy(() => import("https://framerusercontent.com/modules/79sA0gAau0N6EAkKtzT8/fNPBvyO77jzOuzjmfbmk/cX2Ymwn5I.js")),
+                    isReducedMotion: undefined,
+                    localeId,
+                    locales,
+                    preserveQueryParams: undefined,
+                    EditorBar: 
+        typeof window === "undefined" ? undefined : Framer.lazy(async () => {
+            const { createEditorBar } = await import("https://edit.framer.com/init.mjs")
+            return {
+                default: createEditorBar({
+                    dependencies: {
                         __version: 1,
                         framer: {
-                          useCurrentRoute: Framer.useCurrentRoute,
-                          useLocaleInfo: Framer.useLocaleInfo,
-                          useRouter: Framer.useRouter,
+                            useCurrentRoute: Framer.useCurrentRoute,
+                            useLocaleInfo: Framer.useLocaleInfo,
+                            useRouter: Framer.useRouter
                         },
                         react: {
-                          createElement: React.createElement,
-                          memo: React.memo,
-                          useCallback: React.useCallback,
-                          useEffect: React.useEffect,
-                          useRef: React.useRef,
-                          useState: React.useState,
+                            createElement: React.createElement,
+                            memo: React.memo,
+                            useCallback: React.useCallback,
+                            useEffect: React.useEffect,
+                            useRef: React.useRef,
+                            useState: React.useState
                         },
-                        "react-dom": { createPortal },
-                      },
-                    }),
-                  };
-                }),
-        });
-
-        const contentWithFeaturesContext = React.createElement(
-          Framer.LibraryFeaturesProvider,
-          {
-            children: content,
-            value: {
-              codeBoundaries: true,
-              editorBarSubtle: false,
-              enableAsyncURLUpdates: true,
-              pauseOffscreen: false,
-              replaceNestedLinks: true,
-              showAdvancedAnalytics: false,
-              useGranularSuspense: true,
-              wrapUpdatesInTransitions: true,
-            },
-          }
-        );
-
-        const contentWithGracefullyDegradingErrorBoundary = React.createElement(
-          Framer.GracefullyDegradingErrorBoundary,
-          {
-            children: contentWithFeaturesContext,
-          }
-        );
-
-        const page = React.createElement(Framer.PageEffectsProvider, {
-          children: contentWithGracefullyDegradingErrorBoundary,
-          value: { routes: {} },
-        });
-
-        return page;
-      }
-
-      const isBrowser = typeof document !== "undefined";
-      if (isBrowser) {
-        window.__framer_importFromPackage =
-          (packageAndFilename, exportIdentifier) => () => {
-            return React.createElement(Framer.ErrorPlaceholder, {
-              error:
-                'Package component not supported: "' +
-                exportIdentifier +
-                '" in "' +
-                packageAndFilename +
-                '"',
-            });
-          };
-
-        // A lot of libraries assume process.env.NODE_ENV is present in runtime/buildtime, so we are polyfilling it
-        window.process = {
-          ...window.process,
-          env: {
-            ...(window.process ? window.process.env : undefined),
-            NODE_ENV: "production",
-          },
-        };
-
-        window.__framer_events = window.__framer_events || [];
-
-        // Fallback support for stack gaps
-        Framer.installFlexboxGapWorkaroundIfNeeded();
-
-        const container = document.getElementById("main");
-        // We know that #main is parsed before this script, so we don't need to wait for DOMContentLoaded or similar events.
-        if ("framerHydrateV2" in container.dataset) main(true, container);
-        else main(false, container);
-      }
-
-      function track() {
-        if (!isBrowser) return;
-        window.__framer_events.push(arguments);
-      }
-
-      async function main(shouldHydrate, container) {
-        function handleError(error, errorInfo, recoverable = true) {
-          if (error.caught || window.__framer_hadFatalError) return; // we already logged it
-
-          const componentStack = errorInfo?.componentStack;
-          if (recoverable) {
-            console.warn(
-              "Recoverable error during hydration. Please check any custom code or code overrides to fix server/client mismatches:\n",
-              error,
-              componentStack
-            );
-            // we only want to collect 1%, because this can be quite noisy (floods the data pipeline)
-            if (Math.random() > 0.01) return;
-          } else {
-            console.error(
-              "Fatal crash during hydration. If you are the author of this website, please report this issue to the Framer team via https://www.framer.community/"
-            );
-          }
-          track(
-            recoverable
-              ? "published_site_load_recoverable_error"
-              : "published_site_load_error",
-            {
-              message: String(error),
-              componentStack, // componentStack is more useful
-              stack: componentStack
-                ? undefined
-                : error instanceof Error && typeof error.stack === "string"
-                ? error.stack
-                : null,
+                        'react-dom': { createPortal }
+                    }
+                })
             }
-          );
-        }
-
-        try {
-          let routeId, localeId, pathVariables, breakpoints;
-          if (shouldHydrate) {
-            const routeData = JSON.parse(container.dataset.framerHydrateV2);
-            routeId = routeData.routeId;
-            localeId = routeData.localeId;
-            pathVariables = routeData.pathVariables;
-            breakpoints = routeData.breakpoints;
-          } else {
-            const routeData = Framer.inferInitialRouteFromPath(
-              routes,
-              decodeURIComponent(location.pathname),
-              true,
-              locales
-            );
-            routeId = routeData.routeId;
-            localeId = routeData.localeId;
-            pathVariables = routeData.pathVariables;
-          }
-
-          const page = await getPageRoot({ routeId, localeId, pathVariables });
-          if (shouldHydrate) {
-            Framer.withPerformanceMarks("framer-rewrite-breakpoints", () => {
-              Framer.removeHiddenBreakpointLayersV2(breakpoints);
-              window.__framer_onRewriteBreakpoints?.(breakpoints);
-            });
-
-            const startTransition = React.startTransition;
-            startTransition(() => {
-              Framer.markHydrationStart();
-              Framer.setInitialHydrationState();
-              if (true) Framer.turnOffReactEventHandling();
-              ReactDOM.hydrateRoot(container, page, {
-                onRecoverableError: handleError,
-              });
-            });
-          } else {
-            ReactDOM.createRoot(container, {
-              onRecoverableError: handleError,
-            }).render(page);
-          }
-        } catch (error) {
-          handleError(error, undefined, false);
-          throw error;
-        }
-      }
-
-      (function () {
-        if (!isBrowser) return;
-
-        React.startTransition(() => {
-          ReactDOM.createRoot(
-          ).render(
-            React.createElement(
-              React.Suspense,
-              {},
-              React.createElement(
-                Framer.withStyleAppearEffect(Framer.Container),
-                {
-                  __framer__threshold: 0.5,
-                  __framer__animateOnce: true,
-                  __framer__opacity: 0,
-                  __framer__targetOpacity: 1,
-                  __framer__rotate: 0,
-                  __framer__x: 0,
-                  __framer__y: 10,
-                  __framer__scale: 1,
-                  __framer__transition: {
-                    type: "spring",
-                    ease: [0.44, 0, 0.56, 1],
-                    duration: 0.3,
-                    delay: 1,
-                    stiffness: 350,
-                    damping: 40,
-                    mass: 1.5,
-                  },
-                  __framer__rotateX: 0,
-                  __framer__rotateY: 0,
-                  __framer__perspective: 1200,
-                },
-              )
+        })
+    ,
+                    
+                }
             )
-          );
-        });
-      })();
+
+            const contentWithFeaturesContext = React.createElement(
+                Framer.LibraryFeaturesProvider,
+                {
+                    children: content,
+                    value: {codeBoundaries: true, editorBarSubtle: false, enableAsyncURLUpdates: true, pauseOffscreen: false, replaceNestedLinks: true, showAdvancedAnalytics: false, useGranularSuspense: true, wrapUpdatesInTransitions: true}
+                }
+            )
+
+            const contentWithGracefullyDegradingErrorBoundary = React.createElement(Framer.GracefullyDegradingErrorBoundary, {
+                children: contentWithFeaturesContext
+            })
+
+            
+            const page = React.createElement(Framer.PageEffectsProvider, {
+                children: contentWithGracefullyDegradingErrorBoundary,
+                value: {routes: {}}
+            })
+
+            return page
+        }
+
+        const isBrowser = typeof document !== "undefined"
+        if (isBrowser) {
+            window.__framer_importFromPackage = (packageAndFilename, exportIdentifier) => () => {
+                return React.createElement(Framer.ErrorPlaceholder, { error: 'Package component not supported: "' + exportIdentifier + '" in "' + packageAndFilename + '"' })
+            }
+
+            // A lot of libraries assume process.env.NODE_ENV is present in runtime/buildtime, so we are polyfilling it
+            window.process = {
+                ...window.process,
+                env: {
+                    ...(window.process ? window.process.env: undefined),
+                    NODE_ENV: "production"
+                }
+            }
+
+            window.__framer_events = window.__framer_events || []
+
+            // Fallback support for stack gaps
+            Framer.installFlexboxGapWorkaroundIfNeeded()
+
+            const container = document.getElementById("main")
+            // We know that #main is parsed before this script, so we don't need to wait for DOMContentLoaded or similar events.
+            if ("framerHydrateV2" in container.dataset) main(true, container)
+            else main(false, container)
+        }
+
+        function track() {
+            if (!isBrowser) return
+            window.__framer_events.push(arguments)
+        }
+
+        async function main(shouldHydrate, container) {
+            function handleError(error, errorInfo, recoverable = true) {
+                if (error.caught || window.__framer_hadFatalError) return // we already logged it
+
+                const componentStack = errorInfo?.componentStack
+                if (recoverable) {
+                    console.warn("Recoverable error during hydration. Please check any custom code or code overrides to fix server/client mismatches:\n", error, componentStack)
+                    // we only want to collect 1%, because this can be quite noisy (floods the data pipeline)
+                    if (Math.random() > 0.01) return
+                } else {
+                    console.error("Fatal crash during hydration. If you are the author of this website, please report this issue to the Framer team via https://www.framer.community/")
+                }
+                track(recoverable ? "published_site_load_recoverable_error" : "published_site_load_error", {
+                    message: String(error),
+                    componentStack, // componentStack is more useful
+                    stack: componentStack ? undefined : error instanceof Error && typeof error.stack === "string" ? error.stack : null,
+                })
+            }
+
+            try {
+                let routeId, localeId, pathVariables, breakpoints
+                if (shouldHydrate) {
+                    const routeData = JSON.parse(container.dataset.framerHydrateV2)
+                    routeId = routeData.routeId
+                    localeId = routeData.localeId
+                    pathVariables = routeData.pathVariables
+                    breakpoints = routeData.breakpoints
+                } else {
+                    const routeData = Framer.inferInitialRouteFromPath(routes, decodeURIComponent(location.pathname), true, locales)
+                    routeId = routeData.routeId
+                    localeId = routeData.localeId
+                    pathVariables = routeData.pathVariables
+                }
+
+                const page = await getPageRoot({ routeId, localeId, pathVariables })
+                if (shouldHydrate) {
+                    
+
+                    Framer.withPerformanceMarks("framer-rewrite-breakpoints", () => {
+                        Framer.removeHiddenBreakpointLayersV2(breakpoints)
+                        window.__framer_onRewriteBreakpoints?.(breakpoints)
+                    })
+
+                    
+
+                    const startTransition = React.startTransition
+                    startTransition(() => {
+                        Framer.markHydrationStart()
+                        Framer.setInitialHydrationState()
+                        if (true) Framer.turnOffReactEventHandling()
+                        ReactDOM.hydrateRoot(container, page, { onRecoverableError: handleError })
+                    })
+                } else {
+                    
+                    ReactDOM.createRoot(container, { onRecoverableError: handleError }).render(page)
+                }
+            } catch (error) {
+                handleError(error, undefined, false)
+                throw error
+            }
+        }
+
+        
+
+        
+        ;(function () {
+            if (!isBrowser) return
+
+            React.startTransition(() => {
+                ReactDOM.createRoot(document.getElementById("__framer-badge-container")).render(React.createElement(React.Suspense, {},
+                    React.createElement(Framer.withStyleAppearEffect(Framer.Container), {
+                        className: "__framer-badge",
+                        __framer__threshold: 0.5,
+                        __framer__animateOnce: true,
+                        __framer__opacity: 0,
+                        __framer__targetOpacity: 1,
+                        __framer__rotate: 0,
+                        __framer__x: 0,
+                        __framer__y: 10,
+                        __framer__scale: 1,
+                        __framer__transition: {
+                            "type": "spring",
+                            "ease": [0.44, 0, 0.56, 1],
+                            "duration": 0.3,
+                            "delay": 1,
+                            "stiffness": 350,
+                            "damping": 40,
+                            "mass": 1.5
+                        },
+                        __framer__rotateX: 0,
+                        __framer__rotateY: 0,
+                        __framer__perspective: 1200,
+                    }, React.createElement(React.lazy(() => import("__framer-badge")))
+                    )
+                ))
+            })
+        })()
     </script>
     <!-- Start of bodyEnd -->
-
+    
     <!-- End of bodyEnd -->
 
-    <iframe
-      class="mode_normal"
-      id="__framer-editorbar"
-      src="./Nebula Executor_files/saved_resource.html"
-      height="34"
-      width="185"
-      style="
-        background: none 0% 0% / auto repeat scroll padding-box border-box
-          rgb(34, 34, 34);
-        border-radius: 11px;
-      "
-    ></iframe>
-    <div id="__framer-editorbar-controller"></div>
-  </body>
-</html>
+
+<iframe class="mode_normal" id="__framer-editorbar" src="./Nebula Executor_files/saved_resource.html" height="34" width="185" style="background: none 0% 0% / auto repeat scroll padding-box border-box rgb(34, 34, 34); border-radius: 11px;"></iframe><div id="__framer-editorbar-controller"></div></body></html>
